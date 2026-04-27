@@ -1,0 +1,213 @@
+"""
+Listas em Python
+Tipo list - Mutável
+Suporta vários valores de qualquer tipo
+Conhecimentos reutilizáveis - índices e fatiamento
+Métodos úteis:
+    append - Adiciona um item ao final
+    insert - Adiciona um item no índice escolhido
+    pop - Remove do final ou do índice escolhido
+    del - apaga um índice
+    clear - limpa a lista
+    extend - estende a lista
+    + - concatena listas
+Create Read Update   Delete
+Criar, ler, alterar, apagar = lista[i] (CRUD)
+"""
+#        0   1   2   3
+lista = [10, 20, 30, 40]
+lista.append('Luiz')
+nome = lista.pop()
+lista.append(1233)
+del lista[-1]
+# lista.clear()
+lista.insert(100, 5)
+print(lista[4])
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# LISTAS EM PYTHON (TIPO LIST)
+# ========================================
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+Lista é MUTÁVEL:
+Você cria, muda e organiza do seu jeito.
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+Listas em Python são estruturas de dados MUTÁVEIS, ou seja,
+você pode alterar seus valores depois de criadas.
+
+Elas armazenam múltiplos valores, inclusive de tipos diferentes,
+como números, strings, booleanos, etc.
+
+Exemplo:
+lista = [10, 20, 30, "Luiz", True]
+
+Cada item da lista possui um índice (posição), começando do 0.
+
+Índices:
+[0, 1, 2, 3, ...]
+
+Também é possível acessar de trás pra frente com índices negativos:
+[-1, -2, -3, ...]
+
+Principais operações (CRUD):
+
+C - Create (Criar) → adicionar elementos
+R - Read (Ler) → acessar elementos
+U - Update (Atualizar) → modificar elementos
+D - Delete (Deletar) → remover elementos
+
+Principais métodos:
+
+append() → adiciona no final
+insert() → adiciona em posição específica
+pop() → remove e retorna um elemento
+del → apaga um item pelo índice
+clear() → limpa toda a lista
+extend() → adiciona vários itens de outra lista
++ → concatena listas
+
+OBS IMPORTANTE:
+Se você usar insert com um índice maior que o tamanho da lista,
+o Python simplesmente adiciona o elemento no final.
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Analise o código abaixo e explique o que será exibido no print final.
+"""
+
+# Código resolvido totalmente comentado
+
+# Criando lista inicial
+# Índices: 0   1   2   3
+# Valores: 10, 20, 30, 40
+# lista = [10, 20, 30, 40]
+
+# Adiciona 'Luiz' ao final
+# lista = [10, 20, 30, 40, 'Luiz']
+# lista.append('Luiz')
+
+# Remove o último elemento ('Luiz') e armazena em 'nome'
+# lista = [10, 20, 30, 40]
+# nome = 'Luiz'
+# nome = lista.pop()
+
+# Adiciona 1233 ao final
+# lista = [10, 20, 30, 40, 1233]
+# lista.append(1233)
+
+# Remove o último elemento (1233)
+# lista = [10, 20, 30, 40]
+# del lista[-1]
+
+# Insere o número 5 no índice 100
+# Como o índice é maior que o tamanho da lista,
+# o Python adiciona no final
+# lista = [10, 20, 30, 40, 5]
+# lista.insert(100, 5)
+
+# Acessa o índice 4 (último elemento)
+# print(lista[4]) → 5
+
+"""
+Resultado final exibido:
+
+5
+
+Resumo:
+Mesmo usando índice 100 no insert, o valor foi para o final da lista.
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Crie uma lista com 3 números.
+Adicione um novo número ao final e imprima a lista.
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Crie uma lista com 5 nomes.
+Remova o último nome usando pop e imprima o nome removido.
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Crie uma lista com números de 1 a 5.
+Substitua o número 3 por 99 e imprima a lista final.
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Crie duas listas:
+lista1 = [1, 2, 3]
+lista2 = [4, 5, 6]
+
+Una as duas listas de duas formas:
+1) Usando +
+2) Usando extend
+
+Imprima os resultados.
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+# lista = [1, 2, 3]          # cria lista com 3 números
+# lista.append(4)            # adiciona 4 ao final
+# print(lista)               # imprime [1, 2, 3, 4]
+
+# Exercício 2 - Médio
+# lista = ["Ana", "João", "Pedro", "Maria", "Lucas"]  # cria lista
+# removido = lista.pop()     # remove último elemento (Lucas)
+# print(removido)            # imprime "Lucas"
+
+# Exercício 3 - Difícil
+# lista = [1, 2, 3, 4, 5]    # cria lista
+# lista[2] = 99              # substitui índice 2 (valor 3) por 99
+# print(lista)               # imprime [1, 2, 99, 4, 5]
+
+# Exercício 4 - Difícil
+# lista1 = [1, 2, 3]         # primeira lista
+# lista2 = [4, 5, 6]         # segunda lista
+
+# usando +
+# resultado1 = lista1 + lista2   # concatena listas
+# print(resultado1)              # imprime [1, 2, 3, 4, 5, 6]
+
+# usando extend
+# lista1.extend(lista2)          # adiciona elementos de lista2 em lista1
+# print(lista1)                  # imprime [1, 2, 3, 4, 5, 6]

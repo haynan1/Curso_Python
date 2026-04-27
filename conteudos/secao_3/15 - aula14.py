@@ -1,0 +1,238 @@
+'''Formatação de texto'''
+
+a = "A"
+b = "B"
+c = 1.1
+string = "a = {nome2} b = {nome1} c = {nome3:.2f}"
+formato = string.format(
+    nome1=a,
+    nome2=b,
+    nome3=c
+    )
+
+print(formato)
+
+
+''' 
+
+Breve explicação, .(nome da "função"), no caso foi selecionado o "format", ele tem um indice, que fica após seu nome, e o indice está entre (), posso colocar variaveis e exibir o valor dessas variaveis como também posso colocar outros valores que não dependam da variável, por padrão o indice segue uma forma cronológica, 0, 1, 2 ... , em sua própria sequencia. Mas posso também definir qual a sequencia colocar para estar exibindo e também nomear o parâmetro.
+
+'''
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# FORMATAÇÃO DE STRINGS COM .format()
+# ========================================
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+"Chaves marcam.
+Format substitui.
+Índice organiza."
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+Neste conteúdo aprendemos outra forma de
+formatar textos em Python:
+
+O método .format()
+
+Sintaxe básica:
+
+"texto {}".format(valor)
+
+O método format substitui os valores
+que estão dentro das chaves { }.
+
+Existem três formas principais:
+
+1) Por ordem automática
+"{} {}".format(a, b)
+
+2) Por índice numérico
+"{0} {1}".format(a, b)
+
+3) Por nome (mais organizado)
+"{nome}".format(nome=valor)
+
+No arquivo temos:
+
+string = "a = {nome2} b = {nome1} c = {nome3:.2f}"
+
+Observe:
+
+{nome2}
+{nome1}
+{nome3:.2f}
+
+Depois usamos:
+
+string.format(
+    nome1=a,
+    nome2=b,
+    nome3=c
+)
+
+Isso significa:
+
+nome1 → recebe valor de a
+nome2 → recebe valor de b
+nome3 → recebe valor de c
+
+O :.2f significa:
+
+:  → inicia formatação
+.2 → duas casas decimais
+f  → formato float
+
+Ou seja:
+1.1 virou 1.10
+
+IMPORTANTE:
+
+O format funciona antes das f-strings.
+Hoje em dia usamos mais f-string,
+mas entender format é essencial
+para ler códigos antigos.
+
+Resumo mental:
+
+{ } marca posição.
+.format() substitui.
+:.2f formata número decimal.
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Crie:
+
+nome = "Carlos"
+idade = 30
+
+Use .format() para mostrar:
+
+"Carlos tem 30 anos."
+"""
+
+# nome = "Carlos"                                   # Criando variável nome
+# idade = 30                                        # Criando variável idade
+# frase = "{} tem {} anos.".format(nome, idade)     # Usando format por ordem
+# print(frase)                                      # Exibindo resultado
+
+"""
+Explicação do código resolvido:
+
+1) Criamos as variáveis.
+2) Usamos {} como marcadores.
+3) format substituiu na ordem enviada.
+4) O resultado foi exibido corretamente.
+
+Simples e funcional.
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Exercício 1 - Fácil
+
+Crie:
+
+produto = "Celular"
+preco = 2500
+
+Use .format() para mostrar:
+
+"O Celular custa 2500 reais."
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Exercício 2 - Médio
+
+Crie:
+
+a = 5
+b = 10
+
+Use índices numéricos no format
+para inverter a ordem na exibição.
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 3 - Difícil
+
+Crie:
+
+nota = 7.45678
+
+Mostre a nota com 2 casas decimais
+usando .format().
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 4 - Difícil
+
+Crie:
+
+nome = "Ana"
+saldo = 1234.5
+
+Use parâmetros nomeados no format
+e mostre o saldo com 2 casas decimais.
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# produto = "Celular"                                  # Produto
+# preco = 2500                                         # Preço
+# print("O {} custa {} reais.".format(produto, preco)) # Substituição por ordem
+
+# Exercício 2 - Médio
+
+# a = 5                                                # Valor a
+# b = 10                                               # Valor b
+# print("{1} {0}".format(a, b))                        # Invertendo ordem pelos índices
+
+# Exercício 3 - Difícil
+
+# nota = 7.45678                                       # Nota decimal
+# print("Nota: {:.2f}".format(nota))                   # Formatando 2 casas decimais
+
+# Exercício 4 - Difícil
+
+# nome = "Ana"                                         # Nome
+# saldo = 1234.5                                       # Saldo
+# print("{nome} tem saldo de {saldo:.2f}".format(nome=nome, saldo=saldo))
+# Parâmetros nomeados e formatação decimal

@@ -1,0 +1,213 @@
+"""
+Exercício
+Exiba os índices da lista
+0 Maria
+1 Helena
+2 Luiz
+"""
+lista = ['Maria', 'Helena', 'Luiz']
+lista.append('João')
+
+
+indices = range(len(lista))
+
+for indice in indices:
+    print(indice, lista[indice], type(lista[indice]))
+
+
+
+
+'''Outra forma que eu pratiquei'''
+
+
+
+lista = ['Gabrielly', 15, 'Haynan', 11, 'Casamento']
+
+indices = range(len(lista))
+#Range ele cria os números, len vai contar esses números do tamanho da variavel lista;
+
+for numero in indices:
+    print(numero,lista[numero])
+
+
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# TÍTULO DO CONTEÚDO
+# ========================================
+
+# Percorrendo Listas com Índices (range + len)
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+"len mede, range cria, índice acessa."
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+Quando trabalhamos com listas em Python, muitas vezes precisamos acessar
+os elementos junto com seus índices (posição).
+
+Para isso, usamos três coisas principais:
+
+1) len(lista)
+- Retorna a quantidade de elementos da lista.
+
+2) range(n)
+- Gera uma sequência de números de 0 até n-1.
+
+3) lista[indice]
+- Acessa o elemento naquela posição.
+
+Fluxo do seu código:
+
+- A lista começa com 3 nomes.
+- Depois você usa append() para adicionar "João".
+- Então a lista passa a ter 4 elementos.
+- len(lista) retorna 4.
+- range(4) gera: 0, 1, 2, 3
+- O for percorre esses índices.
+- A cada índice, você acessa o valor correspondente na lista.
+
+Isso permite imprimir:
+
+índice + valor + tipo
+
+Esse padrão é muito usado quando precisamos saber a posição de cada item.
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Dada uma lista de nomes, exiba o índice, o nome e o tipo de cada elemento.
+"""
+
+# lista original
+# lista = ['Maria', 'Helena', 'Luiz']
+
+# adicionando um novo elemento
+# lista.append('João')
+
+# pegando a quantidade de elementos
+# tamanho = len(lista)
+
+# criando os índices de 0 até tamanho-1
+# indices = range(tamanho)
+
+# percorrendo os índices
+# for indice in indices:
+    # acessando o elemento pelo índice
+    # nome = lista[indice]
+
+    # exibindo índice, valor e tipo
+    # print(indice, nome, type(nome))
+
+"""
+Explicação do código resolvido:
+
+- append(): adiciona um novo item na lista.
+- len(): conta quantos elementos existem.
+- range(): cria os índices automaticamente.
+- for: percorre cada índice.
+- lista[indice]: acessa o valor correspondente.
+- type(): mostra o tipo do dado (nesse caso, str).
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Crie uma lista com 3 frutas.
+
+Percorra a lista e exiba:
+índice + fruta
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Crie uma lista com 5 números.
+
+Exiba:
+índice + número + dobro do número
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Crie uma lista com nomes.
+
+Exiba apenas os nomes que estão em índices pares.
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Crie uma lista com 6 números.
+
+Exiba:
+índice + número + "PAR" ou "ÍMPAR"
+(dependendo do valor do número)
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# lista = ['Maçã', 'Banana', 'Uva']
+# indices = range(len(lista))
+# for i in indices:
+    # print(i, lista[i])
+
+# Exercício 2 - Médio
+
+# lista = [10, 20, 30, 40, 50]
+# indices = range(len(lista))
+# for i in indices:
+    # numero = lista[i]
+    # dobro = numero * 2
+    # print(i, numero, dobro)
+
+# Exercício 3 - Difícil
+
+# lista = ['Ana', 'Bruno', 'Carlos', 'Diana', 'Eduardo']
+# indices = range(len(lista))
+# for i in indices:
+    # if i % 2 == 0:
+        # print(i, lista[i])
+
+# Exercício 4 - Difícil
+
+# lista = [1, 2, 3, 4, 5, 6]
+# indices = range(len(lista))
+# for i in indices:
+    # numero = lista[i]
+    # if numero % 2 == 0:
+        # tipo = "PAR"
+    # else:
+        # tipo = "ÍMPAR"
+    # print(i, numero, tipo)
+    

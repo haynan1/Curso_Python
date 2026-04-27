@@ -1,0 +1,312 @@
+'''Pequena lista de exercícios.'''
+
+''' Exercício 1 '''
+# '''
+# Faça um programa que peça ao usuário para digitar um número inteiro, 
+# informe se este número é par ou ímpar. Caso o usuário não digite um número inteiro, 
+# informe que não é um número inteiro.
+# '''
+
+'''Forma 1 - resposta'''
+
+# entrada = input("Digite um número: ")
+
+# if entrada.isdigit():
+#     entrada_int = int(entrada)
+#     par_impar = entrada_int % 2 == 0
+#     par_impar_texto = 'ímpar'
+
+#     if par_impar:
+#         par_impar_texto = 'par'
+
+#     print(f"O número {entrada_int} é {par_impar_texto} ")
+# else:
+#     print("Você não digitou um número inteiro")
+
+'''Forma 2 - resposta'''
+
+# entrada = input("Digite um número: ")
+
+# try:
+#     entrada_int = int(entrada)
+#     par_impar = entrada_int % 2 == 0
+#     par_impar_texto = 'ímpar'
+
+#     if par_impar:
+#         par_impar_texto = 'par'
+
+#     print(f"O número {entrada_int} é {par_impar_texto} ")
+# except:
+#     print("Você não digitou um número inteiro")
+
+
+
+''' Exercício 2 '''
+'''
+Faça um programa que pergunte a hora ao usuário e, baseando-se no horário descrito, 
+exiba a saudação apropriada. Ex. Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
+'''
+
+# entrada = input("Digite um horário do dia: ")
+
+# try:
+#     hora = int(entrada)
+
+#     if hora >= 0 and hora <=11:
+#         print("Bom dia !")
+#     elif hora >= 12 and hora <= 17:
+#         print("Bom Tarde !")
+#     elif hora >= 18 and hora <= 23:
+#         print("Boa Noite !")
+#     else: 
+#         print("Não conheço essa hora !")
+# except:
+#     print("Por favor, digite apenas números inteiros")
+
+
+''' Exercício 3 '''
+'''
+Faça um programa que peça o primeiro nome do usuário. Se o nome tiver 4 letras ou menos escreva 
+"Seu nome é curto"; se tiver entre 5 e 6 letras, escreva "Seu nome é normal"; maior que 6 escreva 
+"Seu nome é muito grande".
+'''
+
+# nome = input("Digite seu nome: ")
+# tamanho_nome = len(nome)
+
+# if tamanho_nome > 1:
+#     if tamanho_nome <= 4:
+#         print("Seu nome é curto.")
+#     elif tamanho_nome >= 5 and tamanho_nome <= 6:
+#         print('Seu nome é normal.')
+#     else:
+#         print("Seu nome é muito grande.")
+# else:
+#     print("Digite mais de uma letra.")
+
+
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# ESTRUTURAS CONDICIONAIS E TRATAMENTO DE ERROS
+# ========================================
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+SE decide.
+ELIF ajusta.
+ELSE resolve.
+TRY testa.
+EXCEPT protege.
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+As estruturas condicionais permitem que o programa tome decisões.
+
+Em Python utilizamos:
+
+- if → executa um bloco se a condição for verdadeira
+- elif → testa uma nova condição caso a anterior seja falsa
+- else → executa caso nenhuma condição anterior seja verdadeira
+
+Exemplo lógico:
+Se a condição for verdadeira → faça algo.
+Senão → faça outra coisa.
+
+Operadores importantes:
+==  igual
+!=  diferente
+>   maior
+<   menor
+>=  maior ou igual
+<=  menor ou igual
+%   resto da divisão (muito usado para verificar par ou ímpar)
+
+Número par:
+Um número é par quando o resto da divisão por 2 é igual a 0.
+Exemplo:
+10 % 2 == 0 → par
+
+Tratamento de erros:
+
+try:
+    tenta executar um código
+except:
+    executa caso ocorra erro
+
+Isso evita que o programa quebre caso o usuário digite algo inválido.
+
+Funções importantes:
+
+input() → recebe dados do usuário (sempre como texto)
+int() → converte texto para número inteiro
+len() → retorna o tamanho de um texto
+isdigit() → verifica se a string contém apenas números positivos
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Faça um programa que peça um número ao usuário e informe se ele é par ou ímpar.
+Caso o usuário não digite um número inteiro, informe que é inválido.
+"""
+
+# Solicita que o usuário digite um número
+# entrada = input("Digite um número: ")
+
+# Tenta converter o valor digitado para inteiro
+# try:
+#     numero = int(entrada)  # Converte para inteiro
+#     
+#     # Verifica se o número é par
+#     # if numero % 2 == 0:
+#     #     print("O número é par")
+#     # else:
+#     #     print("O número é ímpar")
+# 
+# except:
+#     # Caso ocorra erro na conversão
+#     # print("Você não digitou um número inteiro")
+
+"""
+Explicação:
+
+1. O programa pede um valor ao usuário.
+2. O bloco try tenta transformar o valor em número inteiro.
+3. Se conseguir, verifica se o resto da divisão por 2 é igual a 0.
+4. Caso ocorra erro na conversão, o except é executado.
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Peça ao usuário para digitar um número inteiro.
+Informe se ele é positivo, negativo ou zero.
+Caso não seja número inteiro, informe erro.
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Peça ao usuário que digite a hora (0 a 23).
+Mostre:
+Bom dia → 0 a 11
+Boa tarde → 12 a 17
+Boa noite → 18 a 23
+Caso digite valor inválido, informe erro.
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Peça o primeiro nome do usuário.
+Se tiver:
+4 letras ou menos → "Nome curto"
+5 ou 6 letras → "Nome normal"
+Mais de 6 letras → "Nome muito grande"
+Se digitar apenas 1 letra, peça mais caracteres.
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Peça dois números ao usuário.
+Mostre qual é o maior.
+Se forem iguais, informe que são iguais.
+Caso algum valor não seja número inteiro, informe erro.
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# entrada = input("Digite um número inteiro: ")
+# try:
+#     numero = int(entrada)  # Converte para inteiro
+#     
+#     if numero > 0:  # Verifica se é maior que zero
+#         print("Número positivo")
+#     elif numero < 0:  # Verifica se é menor que zero
+#         print("Número negativo")
+#     else:  # Caso não seja maior nem menor
+#         print("Número zero")
+# except:
+#     print("Valor inválido. Digite um número inteiro.")
+
+
+# Exercício 2 - Médio
+
+# entrada = input("Digite a hora (0-23): ")
+# try:
+#     hora = int(entrada)  # Converte para inteiro
+#     
+#     if hora >= 0 and hora <= 11:
+#         print("Bom dia")
+#     elif hora >= 12 and hora <= 17:
+#         print("Boa tarde")
+#     elif hora >= 18 and hora <= 23:
+#         print("Boa noite")
+#     else:
+#         print("Hora inválida")
+# except:
+#     print("Digite apenas números inteiros")
+
+
+# Exercício 3 - Difícil
+
+# nome = input("Digite seu nome: ")
+# tamanho = len(nome)  # Conta quantidade de caracteres
+# 
+# if tamanho > 1:
+#     if tamanho <= 4:
+#         print("Nome curto")
+#     elif tamanho == 5 or tamanho == 6:
+#         print("Nome normal")
+#     else:
+#         print("Nome muito grande")
+# else:
+#     print("Digite mais de uma letra")
+
+
+# Exercício 4 - Difícil
+
+# entrada1 = input("Digite o primeiro número: ")
+# entrada2 = input("Digite o segundo número: ")
+# 
+# try:
+#     num1 = int(entrada1)  # Converte primeiro número
+#     num2 = int(entrada2)  # Converte segundo número
+#     
+#     if num1 > num2:
+#         print("O primeiro número é maior")
+#     elif num2 > num1:
+#         print("O segundo número é maior")
+#     else:
+#         print("Os números são iguais")
+# except:
+#     print("Um ou ambos os valores não são inteiros")

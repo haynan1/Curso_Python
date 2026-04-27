@@ -1,0 +1,302 @@
+# Tipos int e float
+# Int -> Número inteiro
+#O tipo int representa qualquer número
+#Positivo ou negativo. Int sem sinal é considerado
+#Positivo.
+'''
+print(11) #int
+print(-11)#int
+print(0)
+'''
+
+#float -> Número com ponto flutuante
+#O tipo float representa qualquer número
+#Positivo ou negativo com ponto flutuante.
+#Float sem sinal é considerado positivo.
+
+#Dica Ctrl + barra, com as linhas de código selecionadas ele comentas as linhas da seleção.
+
+'''
+print(1.1, 10.11)
+print(0.0, -1.5)
+'''
+
+# A função type mostra o tipo que o Python
+#Inferiu ao valor
+
+'''
+print(type('Haynan'))
+print(type(1))
+print(type(0.0), type(1.1), type(-1.1))
+'''
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# TIPOS NUMÉRICOS: INT E FLOAT NO PYTHON
+# ========================================
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+INT é inteiro.
+FLOAT flutua com ponto.
+Se tem ponto, é flutuante.
+Se não tem, é inteiro pronto.
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+No Python, os números são classificados em tipos.
+
+Os dois principais tipos numéricos iniciais são:
+
+1) int
+2) float
+
+----------------------------------------
+TIPO INT
+----------------------------------------
+
+O tipo int representa números inteiros.
+
+Inteiro é todo número que NÃO possui parte decimal.
+Ou seja, não possui ponto.
+
+Exemplos:
+11
+-11
+0
+200
+-999
+
+Importante:
+Se o número não tiver sinal (+ ou -),
+ele é considerado positivo.
+
+Exemplo:
+11  -> positivo
+-11 -> negativo
+
+----------------------------------------
+TIPO FLOAT
+----------------------------------------
+
+O tipo float representa números com ponto flutuante.
+Ou seja, números que possuem parte decimal.
+
+Exemplos:
+1.1
+10.11
+0.0
+-1.5
+
+Importante:
+Assim como no int, se o número não tiver sinal,
+ele é considerado positivo.
+
+----------------------------------------
+FUNÇÃO type()
+----------------------------------------
+
+A função type() serve para descobrir
+qual tipo o Python atribuiu a um valor.
+
+Exemplo:
+
+type(1)     -> int
+type(0.0)   -> float
+type("Oi")  -> str
+
+O Python identifica automaticamente
+o tipo do valor digitado.
+
+Isso se chama INFERÊNCIA DE TIPO.
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Crie exemplos de números inteiros e números float.
+Depois utilize a função type() para verificar o tipo
+de cada valor.
+"""
+
+# Exemplo resolvido totalmente comentado:
+
+# print(11)              # Mostra um número inteiro
+# print(-11)             # Mostra um número inteiro negativo
+# print(0)               # Zero também é inteiro
+
+# print(1.1, 10.11)      # Dois números com ponto (float)
+# print(0.0, -1.5)       # Float positivo e negativo
+
+# print(type('Haynan'))  # Mostra o tipo string (str)
+# print(type(1))         # Mostra o tipo int
+# print(type(0.0))       # Mostra o tipo float
+# print(type(1.1))       # Mostra o tipo float
+# print(type(-1.1))      # Mostra o tipo float
+
+
+"""
+Explicação do código resolvido:
+
+Cada print() exibe um valor na tela.
+
+Quando usamos type(valor),
+o Python informa qual é o tipo daquele valor.
+
+Se o número não tem ponto -> int.
+Se tem ponto -> float.
+Se está entre aspas -> str (string).
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+"""
+Exercício 1 - Fácil
+
+Escreva três números inteiros:
+- Um positivo
+- Um negativo
+- O número zero
+
+Depois utilize a função type() para verificar
+o tipo de cada um.
+"""
+
+print(type(1))
+print(type(-1))
+print(type(0))
+
+print("Primeira etapa concluida")
+print(25 * "-")
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Exercício 2 - Médio
+
+Crie quatro números float:
+- Dois positivos
+- Dois negativos
+
+Depois utilize type() para confirmar
+que todos são do tipo float.
+"""
+
+print(type(1.0))
+print(type(2.0))
+print(type(-3.0))
+print(type(-4.0))
+
+print("Segunda etapa concluida")
+print(25 * "-")
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+"""
+Exercício 3 - Difícil
+
+Misture diferentes tipos de dados no print():
+- Um número inteiro
+- Um número float
+- Uma string
+
+Depois utilize type() separadamente
+para identificar o tipo de cada valor.
+"""
+
+print(type(10))
+print(type(10.00))
+print(type("Esta é uma string"))
+
+print('Terceira etapa concluida')
+print(25 * '-')
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 4 - Difícil
+
+Crie 5 valores diferentes e tente prever
+antes de usar type() qual será o tipo de cada um.
+
+Depois utilize type() para conferir
+se sua previsão estava correta.
+"""
+
+print(1)
+print(2.2)
+print('String')
+print(22)
+print('Hello World')
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# print(25)           # Inteiro positivo
+# print(-8)           # Inteiro negativo
+# print(0)            # Zero (inteiro)
+
+# print(type(25))     # <class 'int'>
+# print(type(-8))     # <class 'int'>
+# print(type(0))      # <class 'int'>
+
+
+# Exercício 2 - Médio
+
+# print(2.5)          # Float positivo
+# print(10.0)         # Float positivo
+# print(-3.7)         # Float negativo
+# print(-0.5)         # Float negativo
+
+# print(type(2.5))    # <class 'float'>
+# print(type(10.0))   # <class 'float'>
+# print(type(-3.7))   # <class 'float'>
+# print(type(-0.5))   # <class 'float'>
+
+
+# Exercício 3 - Difícil
+
+# print(7, 3.14, "Python")  # Mistura de tipos
+
+# print(type(7))            # int
+# print(type(3.14))         # float
+# print(type("Python"))     # str
+
+
+# Exercício 4 - Difícil
+
+# valor1 = 100        # int
+# valor2 = 9.99       # float
+# valor3 = "100"      # str
+# valor4 = -50        # int
+# valor5 = 0.01       # float
+
+# print(type(valor1)) # int
+# print(type(valor2)) # float
+# print(type(valor3)) # str
+# print(type(valor4)) # int
+# print(type(valor5)) # float

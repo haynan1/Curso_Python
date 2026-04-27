@@ -1,0 +1,348 @@
+''' while/else'''
+
+string = "Valorqualquer"
+
+i = 0
+while i < len(string):
+    letra = string[i]
+
+    if letra == ' ':
+        break
+
+    print(letra)
+    i += 1
+else:
+    print("O else foi executado. E não foi encontrado nenhum espaço na minha String!")
+print('Fora do while.')
+
+
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# TÍTULO DO CONTEÚDO
+# ========================================
+
+# WHILE + ELSE EM PYTHON
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+O ELSE DO WHILE SÓ EXECUTA SE O LOOP NÃO FOR QUEBRADO.
+(SE NÃO TIVER BREAK)
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+Em Python, o laço WHILE pode possuir um bloco ELSE.
+
+Isso é algo pouco comum em outras linguagens, mas extremamente
+importante para entender a lógica de controle de fluxo em Python.
+
+A regra é simples:
+
+O bloco ELSE de um WHILE só será executado se o loop terminar
+NATURALMENTE.
+
+Ou seja:
+
+Ele executa quando a condição do WHILE se torna falsa.
+
+Por outro lado, o ELSE NÃO executa se o loop for interrompido
+com um BREAK.
+
+Resumo da lógica:
+
+WHILE termina naturalmente → ELSE executa.
+
+WHILE interrompido com BREAK → ELSE NÃO executa.
+
+Agora vamos analisar o código fornecido.
+
+A variável "string" recebe o valor "Valorqualquer".
+
+Depois criamos uma variável "i" com valor 0 para percorrer a
+string usando índice.
+
+A condição do WHILE é:
+
+i < len(string)
+
+Ou seja, o loop percorre cada posição da string.
+
+Dentro do loop:
+
+1) Pegamos a letra da posição atual.
+2) Verificamos se ela é um espaço.
+3) Se for espaço → BREAK (interrompe o loop).
+4) Se não for → imprime a letra.
+5) Incrementa i.
+
+Como a string "Valorqualquer" NÃO possui espaço, o BREAK nunca
+é executado.
+
+Portanto:
+
+O loop termina naturalmente quando i chega ao tamanho da string.
+
+Isso faz com que o ELSE seja executado.
+
+Depois disso o programa continua normalmente e imprime
+"Fora do while.".
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Percorra uma string e pare caso encontre a letra "x".
+Se a letra não existir, mostre uma mensagem informando que
+nenhum "x" foi encontrado.
+"""
+
+# string = "programacao"
+#
+# i = 0
+#
+# while i < len(string):
+#
+#     # pega a letra atual da string
+#     letra = string[i]
+#
+#     # verifica se encontrou a letra "x"
+#     if letra == "x":
+#
+#         # interrompe o loop caso encontre
+#         break
+#
+#     # mostra a letra atual
+#     print(letra)
+#
+#     # incrementa o índice para continuar o loop
+#     i += 1
+#
+# else:
+#
+#     # esse bloco executa apenas se o loop NÃO tiver break
+#     print("Nenhum 'x' foi encontrado na string.")
+
+"""
+Explicação do código resolvido.
+
+O código percorre cada letra da string usando índice.
+
+Durante o percurso, verificamos se a letra atual é "x".
+
+Se for encontrada, usamos BREAK para interromper o loop.
+
+Caso o loop percorra toda a string sem encontrar "x",
+o WHILE termina naturalmente.
+
+Quando isso acontece, o bloco ELSE é executado e
+exibe a mensagem informando que nenhum "x" foi encontrado.
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Exercício 1 - Fácil
+
+Crie um programa que percorra a string:
+
+"Python"
+
+Imprimindo cada letra.
+
+Se encontrar a letra "h", o programa deve parar o loop.
+
+Caso o loop termine sem BREAK, mostrar:
+
+"Loop finalizado sem interrupção".
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Exercício 2 - Médio
+
+Percorra a string:
+
+"CursoDePython"
+
+Verifique se existe a letra "z".
+
+Se encontrar a letra "z", interrompa o loop.
+
+Se o loop terminar naturalmente, mostrar:
+
+"A letra 'z' não foi encontrada".
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 3 - Difícil
+
+Percorra a string:
+
+"Aprender Python é poderoso"
+
+O programa deve parar quando encontrar o primeiro espaço.
+
+Caso NÃO exista espaço na string, o ELSE deve mostrar:
+
+"Nenhum espaço encontrado".
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 4 - Difícil
+
+Percorra uma string e conte quantas letras existem antes
+de encontrar o número "5".
+
+Se o número "5" não existir, o ELSE deve informar que
+nenhum número foi encontrado.
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# string = "Python"
+#
+# i = 0
+#
+# while i < len(string):
+#
+#     # pega a letra atual
+#     letra = string[i]
+#
+#     # verifica se encontrou "h"
+#     if letra == "h":
+#
+#         # interrompe o loop
+#         break
+#
+#     # imprime a letra
+#     print(letra)
+#
+#     # incrementa índice
+#     i += 1
+#
+# else:
+#
+#     # executa se não houver break
+#     print("Loop finalizado sem interrupção")
+
+
+# Exercício 2 - Médio
+
+# string = "CursoDePython"
+#
+# i = 0
+#
+# while i < len(string):
+#
+#     # letra atual
+#     letra = string[i]
+#
+#     # verifica se é "z"
+#     if letra == "z":
+#
+#         # interrompe caso encontre
+#         break
+#
+#     # avança índice
+#     i += 1
+#
+# else:
+#
+#     # executa se o loop terminar naturalmente
+#     print("A letra 'z' não foi encontrada")
+
+
+# Exercício 3 - Difícil
+
+# string = "Aprender Python é poderoso"
+#
+# i = 0
+#
+# while i < len(string):
+#
+#     # pega caractere atual
+#     letra = string[i]
+#
+#     # verifica se é espaço
+#     if letra == " ":
+#
+#         # interrompe o loop
+#         break
+#
+#     # imprime caractere
+#     print(letra)
+#
+#     # incrementa índice
+#     i += 1
+#
+# else:
+#
+#     # executa se não houver espaço
+#     print("Nenhum espaço encontrado")
+
+
+# Exercício 4 - Difícil
+
+# string = "abc12345xyz"
+#
+# i = 0
+#
+# contador = 0
+#
+# while i < len(string):
+#
+#     # pega caractere atual
+#     caractere = string[i]
+#
+#     # verifica se encontrou "5"
+#     if caractere == "5":
+#
+#         # interrompe o loop
+#         break
+#
+#     # incrementa contador
+#     contador += 1
+#
+#     # incrementa índice
+#     i += 1
+#
+# else:
+#
+#     # executa se não houver "5"
+#     print("Nenhum número 5 encontrado")
+#
+# # mostra quantos caracteres foram contados
+# # antes do número 5
+# # print(contador)

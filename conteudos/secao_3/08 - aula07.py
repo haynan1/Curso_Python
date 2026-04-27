@@ -1,0 +1,228 @@
+#Variáveis são usadas para salvar algo na memória do computador.
+#PEP8: inicie variaveis com letras minusculas, pode usar
+#números e underline _.
+# O sinal de = é o operador de atribuição. Ele é usado para
+#atribuir um valor a um nome (variável).
+#Uso: nome_variavel = expressão.
+
+nome_completo = "Haynan Kerlin de Freitas Jacob"
+soma_dois_mais_dois = 2 + 2
+int_um = int("1")
+
+print(int("1"), type(int("1")))
+# Na programação não repetimos os termos, mas criamos as variáveis. 
+print(int_um, type(int_um))
+#Usando a variavel ao inves de ficar repetindo os termos.
+print(nome_completo, soma_dois_mais_dois)
+# Haynan Kerlin de Freitas Jacob e 4
+
+
+nome = "Haynan"
+idade = 20
+maior_de_idade = idade >= 18
+print("Nome:", nome, "Idade:", idade)
+print("É maior?", maior_de_idade)
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# VARIÁVEIS EM PYTHON
+# ========================================
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+"Variável guarda.
+= atribui.
+E o nome explica o que possui."
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+O QUE É UMA VARIÁVEL?
+
+Uma variável é um espaço na memória do computador
+que recebe um nome para armazenar um valor.
+
+Exemplo:
+nome = "Haynan"
+
+Aqui:
+nome → é o identificador (nome da variável)
+= → operador de atribuição
+"Haynan" → valor armazenado
+
+IMPORTANTE:
+O sinal de = NÃO significa igualdade matemática.
+Ele significa: RECEBE.
+
+REGRAS DE NOMES (PEP8):
+- Letras minúsculas
+- Pode usar números
+- Pode usar underline _
+- Não pode começar com número
+
+Exemplo válido:
+nome_completo
+idade_usuario
+valor1
+
+Exemplo inválido:
+1nome
+nome-completo
+
+POR QUE USAMOS VARIÁVEIS?
+
+Para evitar repetição de código.
+
+No arquivo aula7.py vemos:
+
+int("1")
+Depois foi criada a variável:
+int_um = int("1")
+
+Assim não precisamos repetir int("1") várias vezes.
+
+TIPOS OBSERVADOS NO ARQUIVO:
+
+str  → "Haynan"
+int  → 20
+bool → idade >= 18
+
+O operador >= significa:
+"maior ou igual"
+
+idade >= 18
+Retorna True ou False.
+
+Fluxo mental:
+
+Variável = valor
+Expressões podem ser armazenadas
+Comparações retornam booleanos
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Crie uma variável chamada preco com valor 150.
+Crie outra variável chamada desconto com valor 20.
+Crie uma terceira variável chamada preco_final
+que faça a subtração do desconto.
+Mostre o resultado.
+"""
+
+# preco = 150                     # Criando variável preco com valor inteiro
+# desconto = 20                   # Criando variável desconto
+# preco_final = preco - desconto  # Subtraindo desconto do preço
+# print("Preço final:", preco_final)  # Exibindo resultado
+
+"""
+Explicação do código resolvido:
+
+1) Criamos duas variáveis numéricas.
+2) Utilizamos o operador de subtração.
+3) Armazenamos o resultado em outra variável.
+4) Exibimos o valor final.
+
+Organização:
+Dados → Operação → Resultado
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Exercício 1 - Fácil
+
+Crie uma variável chamada nome com seu nome.
+Crie outra chamada sobrenome.
+Mostre os dois juntos usando print.
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Exercício 2 - Médio
+
+Crie uma variável numero1 = 10
+Crie numero2 = 5
+Crie uma variável soma que armazene a soma dos dois.
+Mostre o tipo da variável soma.
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 3 - Difícil
+
+Crie uma variável idade = 16
+Crie uma variável pode_dirigir que verifique
+se idade é maior ou igual a 18.
+Mostre o resultado.
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 4 - Difícil
+
+Crie:
+produto = "Notebook"
+preco = 3500
+parcelas = 10
+
+Crie uma variável valor_parcela
+que divida o preço pelo número de parcelas.
+Mostre o valor da parcela.
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# nome = "SeuNome"                   # Criando variável nome
+# sobrenome = "SeuSobrenome"         # Criando variável sobrenome
+# print(nome, sobrenome)             # Mostrando os dois juntos
+
+# Exercício 2 - Médio
+
+# numero1 = 10                       # Primeiro número
+# numero2 = 5                        # Segundo número
+# soma = numero1 + numero2           # Soma dos dois valores
+# print(type(soma))                  # Tipo será int
+
+# Exercício 3 - Difícil
+
+# idade = 16                         # Definindo idade
+# pode_dirigir = idade >= 18         # Comparação lógica
+# print(pode_dirigir)                # Resultado será False
+
+# Exercício 4 - Difícil
+
+# produto = "Notebook"               # Nome do produto
+# preco = 3500                       # Preço total
+# parcelas = 10                      # Quantidade de parcelas
+# valor_parcela = preco / parcelas   # Divisão do valor
+# print(valor_parcela)               # Exibe valor da parcela (float)

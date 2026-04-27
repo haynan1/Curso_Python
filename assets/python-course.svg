@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Curso Python</title>
+  <desc id="desc">Ícone inspirado em Python com duas formas conectadas e símbolo de código.</desc>
+  <defs>
+    <linearGradient id="blue" x1="52" y1="28" x2="166" y2="148" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#4ea8ff"/>
+      <stop offset="1" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="yellow" x1="91" y1="110" x2="204" y2="228" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffe082"/>
+      <stop offset="1" stop-color="#f59e0b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.24"/>
+    </filter>
+  </defs>
+
+  <rect width="256" height="256" rx="56" fill="#0f172a"/>
+  <path d="M128 28c-40 0-64 14-64 42v30h68c13 0 24 11 24 24v18H80c-31 0-52-20-52-50V76c0-31 28-48 76-48h24Z" fill="url(#blue)" filter="url(#shadow)"/>
+  <path d="M82 65a13 13 0 1 0 26 0 13 13 0 0 0-26 0Z" fill="#e0f2fe"/>
+  <path d="M128 228c40 0 64-14 64-42v-30h-68c-13 0-24-11-24-24v-18h76c31 0 52 20 52 50v16c0 31-28 48-76 48h-24Z" fill="url(#yellow)" filter="url(#shadow)"/>
+  <path d="M148 191a13 13 0 1 0 26 0 13 13 0 0 0-26 0Z" fill="#fff7cc"/>
+  <path d="M103 90h45a18 18 0 0 1 18 18v13H89v-17a14 14 0 0 1 14-14Z" fill="#1e293b" opacity="0.28"/>
+  <path d="M108 136h40a18 18 0 0 1 18 18v8H90v-8a18 18 0 0 1 18-18Z" fill="#78350f" opacity="0.2"/>
+  <path d="m89 128 24-24 11 11-13 13 13 13-11 11-24-24Zm78 0-24 24-11-11 13-13-13-13 11-11 24 24Z" fill="#f8fafc"/>
+</svg>

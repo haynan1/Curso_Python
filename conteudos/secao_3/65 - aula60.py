@@ -1,0 +1,235 @@
+"""
+Operação ternária (condicional de uma linha)
+<valor> if <condicao> else <outro valor>
+"""
+# condicao = 10 == 11
+# variavel = 'Valor' if condicao else 'Outro valor'
+# print(variavel)
+# digito = 9  # > 9 = 0
+# novo_digito = digito if digito <= 9 else 0
+# novo_digito = 0 if digito > 9 else digito
+# print(novo_digito)
+print('Valor' if False else 'Outro valor' if False else 'Fim')
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# TÍTULO DO CONTEÚDO
+# ========================================
+
+# Operador Ternário (Condicional em Uma Linha)
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+"Se for verdade, vai pra esquerda; senão, vai pra direita."
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+📌 O QUE É O OPERADOR TERNÁRIO?
+
+O operador ternário é uma forma curta de escrever um if/else em uma única linha.
+
+Sintaxe:
+
+<valor_se_verdadeiro> if <condicao> else <valor_se_falso>
+
+--------------------------------------------------
+
+📌 EXEMPLO SIMPLES
+
+condicao = True
+
+resultado = 'Sim' if condicao else 'Não'
+
+Equivalente a:
+
+if condicao:
+    resultado = 'Sim'
+else:
+    resultado = 'Não'
+
+--------------------------------------------------
+
+📌 EXEMPLO DO SEU CÓDIGO
+
+print('Valor' if False else 'Outro valor' if False else 'Fim')
+
+Agora vamos entender passo a passo.
+
+--------------------------------------------------
+
+📌 COMO O PYTHON LÊ ISSO?
+
+Quando há mais de um ternário, o Python resolve da direita para a esquerda.
+
+Ou seja, ele interpreta assim:
+
+print(
+    'Valor' if False else (
+        'Outro valor' if False else 'Fim'
+    )
+)
+
+--------------------------------------------------
+
+📌 RESOLUÇÃO PASSO A PASSO
+
+1. Primeiro resolve:
+   'Outro valor' if False else 'Fim'
+
+→ Como é False:
+→ Resultado: 'Fim'
+
+2. Agora fica:
+
+'Valor' if False else 'Fim'
+
+→ Como é False:
+→ Resultado final: 'Fim'
+
+--------------------------------------------------
+
+📌 RESULTADO FINAL
+
+Fim
+
+--------------------------------------------------
+
+📌 CUIDADO IMPORTANTE
+
+Ternários encadeados (um dentro do outro) podem ficar difíceis de ler.
+
+❌ Evite:
+
+x = 'A' if cond1 else 'B' if cond2 else 'C' if cond3 else 'D'
+
+✔ Prefira:
+
+if cond1:
+    x = 'A'
+elif cond2:
+    x = 'B'
+elif cond3:
+    x = 'C'
+else:
+    x = 'D'
+
+--------------------------------------------------
+
+📌 RESUMO
+
+- O operador ternário simplifica if/else
+- Pode ser encadeado (mas cuidado com legibilidade)
+- Python avalia da direita para a esquerda quando encadeado
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Dado:
+
+numero = 5
+
+Crie uma variável que receba:
+- "Par" se o número for par
+- "Ímpar" caso contrário
+
+Usando operador ternário.
+"""
+
+# numero = 5
+# resultado = "Par" if numero % 2 == 0 else "Ímpar"
+# print(resultado)
+
+"""
+Explicação:
+
+- numero % 2 == 0 verifica se é par
+- Se for True → retorna "Par"
+- Senão → retorna "Ímpar"
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Crie um ternário que retorne:
+
+"Maior de idade" se idade >= 18
+"Menor de idade" caso contrário
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Dado:
+
+nota = 7
+
+Retorne:
+"Aprovado" se nota >= 6
+"Reprovado" caso contrário
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Crie um ternário encadeado que retorne:
+
+"A" se nota >= 9
+"B" se nota >= 7
+"C" caso contrário
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Reescreva o seguinte ternário usando if/elif/else:
+
+resultado = 'X' if cond1 else 'Y' if cond2 else 'Z'
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+# idade = 20
+# resultado = "Maior de idade" if idade >= 18 else "Menor de idade"
+
+# Exercício 2 - Médio
+# nota = 7
+# resultado = "Aprovado" if nota >= 6 else "Reprovado"
+
+# Exercício 3 - Difícil
+# nota = 8
+# resultado = "A" if nota >= 9 else "B" if nota >= 7 else "C"
+
+# Exercício 4 - Difícil
+# if cond1:
+#     resultado = 'X'
+# elif cond2:
+#     resultado = 'Y'
+# else:
+#     resultado = 'Z'

@@ -1,0 +1,214 @@
+'''
+Repetições
+while (enquanto)
+Executa uma ação enquanto uma condição for verdadeira
+Loop infinito -> Quando um código não tem fim.
+'''
+
+# qtd_linhas = 5
+# qtd_colunas = 5
+
+# linha = 1
+# while linha <= qtd_linhas:
+#     coluna = 1
+#     while coluna <= qtd_colunas:
+#         print(f"{linha=}{coluna=}")
+#         coluna += 1
+#     linha += 1
+
+# print("Acabou")
+
+
+
+
+
+"""
+========================================
+MATERIAL DE SUPORTE - JAMES IA 🤖↓↓↓
+========================================
+"""
+
+# ========================================
+# LAÇOS DE REPETIÇÃO - WHILE (ENQUANTO)
+# ========================================
+
+# ========================================
+# FRASE MNEMÔNICA
+# ========================================
+
+"""
+WHILE pergunta primeiro.
+Se for verdadeiro, executa.
+Se for falso, para.
+"""
+
+# ========================================
+# EXPLICAÇÃO DIDÁTICA
+# ========================================
+
+"""
+O laço WHILE é uma estrutura de repetição utilizada quando NÃO sabemos
+exatamente quantas vezes o código deve executar, mas sabemos que ele
+deve continuar ENQUANTO uma condição for verdadeira.
+
+Estrutura básica:
+
+while condição:
+    bloco de código
+
+Funcionamento:
+
+1) O Python verifica a condição.
+2) Se for True → executa o bloco.
+3) Volta para o início.
+4) Testa novamente.
+5) Repete até a condição ser False.
+
+⚠ LOOP INFINITO
+Se a condição nunca se tornar False,
+o programa ficará executando para sempre.
+
+Isso geralmente acontece quando esquecemos de atualizar
+a variável de controle.
+
+No seu exemplo temos:
+
+- Um while externo controlando as linhas
+- Um while interno controlando as colunas
+
+Isso é chamado de LOOP ANINHADO (loop dentro de loop).
+
+Fluxo do código:
+
+linha = 1
+Enquanto linha <= 5:
+    coluna = 1
+    Enquanto coluna <= 5:
+        imprime valores
+        coluna aumenta
+    linha aumenta
+
+Isso gera uma "grade" 5x5.
+"""
+
+# ========================================
+# EXERCÍCIO RESOLVIDO
+# ========================================
+
+"""
+Crie um programa que imprima uma grade 3x3 mostrando
+o número da linha e da coluna usando while aninhado.
+"""
+
+# qtd_linhas = 3                     # Define quantidade de linhas
+# qtd_colunas = 3                    # Define quantidade de colunas
+#
+# linha = 1                          # Inicializa contador da linha
+#
+# while linha <= qtd_linhas:         # Enquanto linha for menor ou igual a 3
+#     coluna = 1                     # Reinicia coluna a cada nova linha
+#
+#     while coluna <= qtd_colunas:   # Enquanto coluna for menor ou igual a 3
+#         print(f"Linha: {linha} | Coluna: {coluna}")  # Exibe valores
+#         coluna += 1                # Incrementa coluna
+#
+#     linha += 1                     # Incrementa linha após terminar colunas
+
+"""
+Explicação do código resolvido:
+
+1) Definimos os limites da grade.
+2) O primeiro while controla as linhas.
+3) O segundo while controla as colunas.
+4) A cada nova linha, a coluna é reiniciada.
+5) Isso cria o efeito de tabela.
+"""
+
+# ========================================
+# EXERCÍCIO 1 - FÁCIL
+# ========================================
+
+"""
+Exercício 1 - Fácil
+
+Imprima os números de 1 até 10 usando while.
+"""
+
+# ========================================
+# EXERCÍCIO 2 - MÉDIO
+# ========================================
+
+"""
+Exercício 2 - Médio
+
+Imprima apenas os números pares de 1 até 20 usando while.
+"""
+
+# ========================================
+# EXERCÍCIO 3 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 3 - Difícil
+
+Crie um programa que imprima uma tabuada
+(de 1 até 5) usando while aninhado.
+"""
+
+# ========================================
+# EXERCÍCIO 4 - DIFÍCIL
+# ========================================
+
+"""
+Exercício 4 - Difícil
+
+Simule um sistema de senha:
+
+Enquanto a senha digitada for diferente de "1234",
+o programa deve continuar pedindo a senha.
+Quando acertar, deve exibir "Acesso permitido".
+"""
+
+# ========================================
+# GABARITO
+# ========================================
+
+# Exercício 1 - Fácil
+
+# numero = 1                     # Começa em 1
+# while numero <= 10:             # Enquanto for menor ou igual a 10
+#     print(numero)               # Mostra o número
+#     numero += 1                 # Incrementa 1
+
+# Exercício 2 - Médio
+
+# numero = 1                     # Começa em 1
+# while numero <= 20:            # Enquanto menor ou igual a 20
+#     if numero % 2 == 0:        # Verifica se é par
+#         print(numero)          # Imprime se for par
+#     numero += 1                # Incrementa
+
+# Exercício 3 - Difícil
+
+# multiplicador = 1                         # Controla a tabuada (1 a 5)
+# while multiplicador <= 5:                 # Enquanto até 5
+#
+#     numero = 1                            # Número que será multiplicado
+#
+#     while numero <= 10:                   # Enquanto até 10
+#         resultado = multiplicador * numero  # Calcula multiplicação
+#         print(f"{multiplicador} x {numero} = {resultado}")  # Mostra
+#         numero += 1                       # Incrementa número
+#
+#     print("------------------")            # Separador visual
+#     multiplicador += 1                    # Incrementa tabuada
+
+# Exercício 4 - Difícil
+
+# senha = ""                                # Inicializa variável
+#
+# while senha != "1234":                    # Enquanto senha estiver errada
+#     senha = input("Digite a senha: ")     # Pede senha
+#
+# print("Acesso permitido")                 # Executa quando sair do loop
+
