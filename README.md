@@ -2,6 +2,13 @@
 
 Curso inicial de Python para construir a base de raciocínio usada em qualquer programa: entrada, processamento, saída, variáveis, tipos de dados, decisões e repetições.
 
+## Manutenção do repositório
+
+- A estrutura do projeto está documentada em `docs/ESTRUTURA.md`.
+- O fluxo para criar novas sessões está em `docs/GUIA_DE_ATUALIZACAO.md`.
+- Modelos reutilizáveis ficam em `templates/`.
+- Scripts utilitários ficam em `tools/`, fora das pastas de aula.
+
 ## Manual estrutural do curso
 
 Este curso é renderizado no navegador a partir deste arquivo `README.md`.
