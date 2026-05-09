@@ -871,7 +871,13 @@ Esta seção existe para manutenção do repositório e para futuras atualizaç�
 
 ## Publicação
 
-O GitHub Pages publica a raiz do repositório. O site abre `index.html`, carrega `script.js` e renderiza este `README.md`.
+O GitHub Pages publica a raiz do repositório. O site abre `index.html`, carrega `script.js` e busca as fontes Markdown listadas em `site-manifest.json`.
+
+O `README.md` continua sendo a página principal. As aulas estruturadas da seção 3 entram no site por meio de:
+
+```text
+conteudos/secao_3/aulas_estruturadas/
+```
 
 ## Como atualizar uma seção
 
@@ -879,8 +885,9 @@ O GitHub Pages publica a raiz do repositório. O site abre `index.html`, carrega
 2. Atualize o `README.md` da própria seção.
 3. Atualize ou crie notas em `doc_python/`.
 4. Consolide a versão pública neste `README.md`.
-5. Teste o site localmente.
-6. Faça commit e push.
+5. Se criar novas páginas públicas, adicione os arquivos em `site-manifest.json`.
+6. Teste o site localmente.
+7. Faça commit e push.
 
 ## Checklist antes de publicar
 

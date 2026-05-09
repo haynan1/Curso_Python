@@ -19,6 +19,7 @@ const sectionCountEl = document.getElementById("section-count");
 const commandCountEl = document.getElementById("command-count");
 
 const README_PATH = "./README.md";
+const CONTENT_MANIFEST_PATH = "./site-manifest.json";
 const THEME_KEY = "python-course-theme";
 const themeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -568,6 +569,7 @@ function renderPage(index, options = {}) {
   renderSlugCounts = new Map();
   contentEl.innerHTML = marked.parse(page.markdown);
   enhanceRenderedContent(page.markdown);
+  updatePageMetadata(page.markdown);
   updatePageNavigation();
   applySearchFilter();
 
@@ -610,14 +612,11 @@ function getInitialPageTarget() {
 
 async function renderReadme() {
   try {
-    const response = await fetch(README_PATH, { cache: "no-store" });
-    if (!response.ok) {
-      throw new Error(`Falha ao buscar ${README_PATH}: ${response.status}`);
-    }
-
-    fullMarkdown = await response.text();
+    const sources = await getMarkdownSources();
+    const markdownParts = await Promise.all(sources.map(fetchMarkdownSource));
+    fullMarkdown = markdownParts.join("\n\n---\n\n");
     if (!fullMarkdown.trim()) {
-      throw new Error("O arquivo README.md está vazio.");
+      throw new Error("Nenhum conteúdo Markdown foi carregado.");
     }
 
     updatePageMetadata(fullMarkdown);
@@ -639,6 +638,33 @@ async function renderReadme() {
 
     showError(`${error.message} ${hint}`);
   }
+}
+
+async function getMarkdownSources() {
+  try {
+    const response = await fetch(CONTENT_MANIFEST_PATH, { cache: "no-store" });
+    if (!response.ok) return [README_PATH];
+
+    const manifest = await response.json();
+    const markdown = Array.isArray(manifest.markdown) ? manifest.markdown : [];
+    const sources = markdown.filter((item) => typeof item === "string" && item.trim());
+
+    return sources.length ? sources : [README_PATH];
+  } catch {
+    return [README_PATH];
+  }
+}
+
+async function fetchMarkdownSource(source) {
+  const normalizedSource = source.startsWith("./") ? source : `./${source}`;
+  const response = await fetch(normalizedSource, { cache: "no-store" });
+
+  if (!response.ok) {
+    throw new Error(`Falha ao buscar ${source}: ${response.status}`);
+  }
+
+  const markdown = await response.text();
+  return markdown.trim();
 }
 
 function isCompactToc() {
