@@ -32,4 +32,4 @@ A seção 3 está bem assimilada quando o aluno consegue resolver pequenos probl
 
 ## Próximo passo
 
-- [[01 - Seções/Seção 04 - Próxima Seção|Seção 04 - Próxima Seção]]
+- [[01 - Seções/Seção 04 - Funções e Reutilização|Seção 04 - Funções e Reutilização]]

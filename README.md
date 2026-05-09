@@ -1,425 +1,909 @@
 # Curso Python
 
-Trilha de estudo em Python organizada para consulta pública pelo GitHub Pages e manutenção interna com apoio de um cofre Obsidian.
+Este é o repositório público do Curso Python. Ele organiza os conteúdos editáveis em `conteudos/`, mantém um cérebro de documentação no Obsidian em `doc_python/` e publica a trilha didática pelo GitHub Pages usando este `README.md`.
 
-Este repositório tem dois papéis:
+O objetivo é simples: estudar Python com uma estrutura que dá para crescer, revisar, editar e publicar sem bagunçar a origem dos conteúdos.
 
-1. Publicar o conteúdo didático principal no site do curso.
-2. Guardar os materiais de apoio usados para desenvolver, revisar e expandir as aulas.
+## Como este curso é organizado
 
-O conteúdo atual foi reorganizado com base na pasta `conteudos/secao_3`, que reúne os arquivos Python da seção inicial do curso.
+- `conteudos/`: fonte editável do curso. Os arquivos Python, exercícios e materiais de cada seção ficam aqui.
+- `doc_python/`: cofre Obsidian. É o cérebro do projeto, com mapas, decisões, vínculos e documentação interna.
+- `README.md`: versão pública, organizada em módulos, renderizada no GitHub Pages.
+- `index.html`, `script.js` e `style.css`: site que transforma este README em uma navegação por páginas.
 
-## Acesso rápido
+## Regra principal
 
-- Site público: renderizado pelo `index.html` a partir deste `README.md`.
-- Conteúdo-base da seção atual: `conteudos/secao_3/`.
-- Cofre de anotações: `doc_python/`.
-- Documentação interna: `docs/`.
-- Modelos reutilizáveis: `templates/`.
-- Ferramentas de organização: `tools/`.
-
-## Regra principal do repositório
-
-Nunca edite, apague, renomeie ou mova arquivos dentro de:
+Nunca edite manualmente a pasta:
 
 ```text
 doc_python/.obsidian/
 ```
 
-Essa pasta pertence ao Obsidian e guarda configurações internas do cofre, como plugins, aparência, workspace e preferências locais. Alterar esses arquivos pode quebrar o ambiente de anotações.
-
-Ao trabalhar no cofre, edite apenas arquivos `.md` de conteúdo, como:
-
-```text
-doc_python/00 - Início.md
-doc_python/00 - Mapas/Mapa do Curso.md
-doc_python/01 - Seções/Seção 03 - Lógica Python.md
-doc_python/02 - Blocos/01 - Fundamentos.md
-```
-
-Se uma alteração exigir mexer em `.obsidian`, ela deve ser feita manualmente pelo dono do cofre, dentro do próprio Obsidian.
+Essa pasta pertence ao Obsidian. Ela guarda configurações internas do cofre e não deve ser usada como conteúdo do curso.
 
 ---
 
-# Guia Público do Curso
+# Módulo 01 - Visão Geral da Trilha
 
-Este curso começa pela lógica de programação em Python e avança aos poucos até pequenos projetos práticos.
+O curso foi pensado para evoluir em camadas. Primeiro vem a lógica, depois os recursos da linguagem, depois organização de código, automação, projetos e evolução para assuntos mais profissionais.
 
-A proposta é estudar Python com três camadas:
+## Objetivo da trilha
 
-- Conceito: entender o que o recurso faz.
-- Código: ver exemplos pequenos e executáveis.
-- Prática: resolver exercícios e mini-projetos.
+Ao longo do curso, o aluno deve sair de scripts simples para programas cada vez mais organizados, entendendo não só como escrever código, mas também como pensar, testar, documentar e evoluir soluções.
 
-## Objetivo da seção 3
+## Método de estudo
 
-Ao final da seção 3, o aluno deve conseguir:
+Cada seção deve seguir este ciclo:
 
-- Ler código Python básico com segurança.
-- Usar comentários e docstrings para documentar ideias.
-- Exibir informações com `print()`.
-- Trabalhar com strings, números e booleanos.
-- Criar variáveis com nomes claros.
-- Converter tipos de dados quando necessário.
-- Receber entradas com `input()`.
-- Fazer cálculos com operadores aritméticos.
-- Comparar valores e montar condições.
-- Usar `if`, `elif` e `else`.
-- Combinar condições com `and`, `or`, `not`, `in` e `not in`.
-- Repetir ações com `while`, `for` e `range()`.
-- Manipular strings, listas, tuplas e matrizes.
-- Tratar erros simples com `try` e `except`.
-- Resolver pequenos projetos de lógica, incluindo validação de CPF.
+1. Entender o conceito.
+2. Ler exemplos pequenos.
+3. Executar arquivos Python.
+4. Alterar os exemplos.
+5. Resolver exercícios.
+6. Registrar aprendizados no Obsidian.
+7. Consolidar a versão pública no README.
 
-## Trilha de aprendizagem
+## Onde cada coisa fica
 
-A seção 3 deve ser estudada nesta ordem:
+| Área | Papel |
+| --- | --- |
+| `conteudos/secao_X/` | Arquivos Python e materiais editáveis da seção |
+| `conteudos/secao_X/README.md` | Índice interno da seção |
+| `doc_python/` | Cérebro do curso no Obsidian |
+| `README.md` | Página pública do GitHub Pages |
+| `docs/` | Documentação técnica auxiliar |
+| `templates/` | Modelos para novas aulas e seções |
+| `tools/` | Scripts de manutenção |
 
-1. Comentários, docstrings e organização mental do código.
-2. Saída de dados com `print()`, `sep` e `end`.
-3. Strings, aspas, caracteres de escape e raw strings.
-4. Tipos numéricos: `int` e `float`.
-5. Tipo booleano e operadores de comparação.
-6. Conversão de tipos, coerção e cuidados com `input()`.
-7. Variáveis, constantes e boas práticas de nomeação.
-8. Operadores aritméticos, precedência e expressões.
-9. Concatenação, f-strings e formatação de valores.
-10. Entrada de dados e exercícios de processamento.
-11. Condicionais com `if`, `elif` e `else`.
-12. Operadores lógicos e avaliação de curto-circuito.
-13. Interpolação, formatação de strings e fatiamento.
-14. Tratamento de erros com `try` e `except`.
-15. Repetição com `while`.
-16. Controle de laços com `break`, `continue` e `while else`.
-17. Repetição com `for` e `range()`.
-18. Listas, índices, alteração, inserção e remoção.
-19. Tuplas, empacotamento e desempacotamento.
-20. Iteração com listas, `range(len())` e `enumerate()`.
-21. Lista interativa com validação e tratamento de erros.
-22. Precisão numérica com `float`, `round()` e `Decimal`.
-23. Manipulação de strings com `split()`, `join()` e métodos.
-24. Listas dentro de listas e matrizes.
-25. Leitura do interpretador, métodos e funções.
-26. Projeto final: cálculo, geração e validação de CPF.
+## Estado atual
 
-## Organização dos arquivos da seção 3
+A pasta `conteudos/` já possui seções de `secao_3` até `secao_23`. A seção com conteúdo efetivo neste momento é:
 
-Os arquivos de aula ficam em:
+- `conteudos/secao_3/`: lógica de programação em Python, com 69 arquivos `.py` e um `README.md` interno.
+
+As seções `secao_4` até `secao_23` já existem como espaços preparados para receber novos conteúdos.
+
+---
+
+# Módulo 02 - Mapa dos Conteúdos
+
+Este módulo lista todas as pastas dentro de `conteudos/` e define o papel de cada uma na evolução do curso.
+
+## Índice geral
+
+| Pasta | Estado | Função |
+| --- | --- | --- |
+| `conteudos/secao_3/` | Em produção | Lógica de programação, fundamentos de Python, coleções, strings, erros, laços e projeto CPF |
+| `conteudos/secao_4/` | Preparada | Próxima etapa após lógica: funções, escopo, parâmetros e retorno |
+| `conteudos/secao_5/` | Preparada | Organização de código, módulos, pacotes e importações |
+| `conteudos/secao_6/` | Preparada | Estruturas de dados mais completas e prática guiada |
+| `conteudos/secao_7/` | Preparada | Arquivos, leitura, escrita e persistência simples |
+| `conteudos/secao_8/` | Preparada | Tratamento de exceções com mais profundidade e validações |
+| `conteudos/secao_9/` | Preparada | Funções avançadas, lambdas, callbacks e escopo |
+| `conteudos/secao_10/` | Preparada | Programação orientada a objetos |
+| `conteudos/secao_11/` | Preparada | Ambientes, dependências e ferramentas de projeto |
+| `conteudos/secao_12/` | Preparada | Testes automatizados e qualidade de código |
+| `conteudos/secao_13/` | Preparada | Automação com Python |
+| `conteudos/secao_14/` | Preparada | Manipulação de dados e arquivos estruturados |
+| `conteudos/secao_15/` | Preparada | Projetos intermediários |
+| `conteudos/secao_16/` | Preparada | Banco de dados e persistência |
+| `conteudos/secao_17/` | Preparada | APIs, requisições e integração com serviços |
+| `conteudos/secao_18/` | Preparada | Interfaces, scripts de terminal e produtividade |
+| `conteudos/secao_19/` | Preparada | Web, deploy ou aplicações práticas |
+| `conteudos/secao_20/` | Preparada | Projeto aplicado de maior porte |
+| `conteudos/secao_21/` | Preparada | Revisão, refatoração e boas práticas |
+| `conteudos/secao_22/` | Preparada | Portfólio e documentação de projetos |
+| `conteudos/secao_23/` | Preparada | Fechamento, próximos passos e plano de evolução |
+
+## Regra para cada pasta de seção
+
+Cada pasta dentro de `conteudos/` deve ter:
+
+- um `README.md` da seção;
+- arquivos `.py` de aula, exercício ou projeto;
+- nomes ordenáveis por número;
+- critérios para considerar a seção concluída;
+- relação clara com as notas do Obsidian.
+
+## Convenção de arquivos
+
+Use nomes previsíveis:
+
+```text
+01 - aula01.py
+02 - aula02.py
+03 - exercicio_guiado.py
+04 - projeto_final.py
+README.md
+```
+
+Evite nomes soltos sem contexto. O arquivo pode ser alterado quantas vezes for necessário durante o estudo, mas precisa continuar encontrável.
+
+---
+
+# Módulo 03 - Lógica de Programação em Python
+
+Fonte editável:
 
 ```text
 conteudos/secao_3/
 ```
 
-Eles seguem a ordem numérica do curso:
+Esta é a primeira seção real do curso. Ela constrói a base para entender Python: comentários, saída de dados, tipos, variáveis, operadores, entrada, decisões, repetições, coleções, strings, erros e projeto CPF.
+
+## Objetivo da seção
+
+Ao terminar esta seção, o aluno deve conseguir:
+
+- ler um script Python simples;
+- explicar a ordem de execução do código;
+- usar `print()` para saída de dados;
+- criar variáveis com nomes claros;
+- trabalhar com `str`, `int`, `float` e `bool`;
+- converter entradas recebidas por `input()`;
+- escrever condições com `if`, `elif` e `else`;
+- combinar regras com operadores lógicos;
+- usar `while` e `for`;
+- manipular listas, tuplas, strings e matrizes;
+- tratar erros comuns;
+- resolver um projeto de validação de CPF.
+
+## Bloco 03.1 - Primeiros fundamentos
+
+Arquivos:
 
 ```text
 01 - arquivo_de_testes_0.py
 02 - aula01.py
 03 - aula02.py
-...
+04 - aula03.py
+05 - aula04.py
+06 - aula05.py
+07 - aula06.py
+08 - aula07.py
+09 - aula08.py
+10 - aula09.py
+11 - aula10.py
+12 - aula11.py
+13 - aula12.py
+14 - aula13.py
+15 - aula14.py
+16 - aula15.py
+```
+
+Conteúdos trabalhados:
+
+- avaliação de expressões;
+- docstrings e comentários;
+- `print()`, `sep` e `end`;
+- strings, aspas e escape;
+- tipos `int`, `float`, `str` e `bool`;
+- `type()`;
+- conversão de tipos;
+- variáveis e constantes;
+- operadores aritméticos;
+- entrada com `input()`;
+- f-strings e formatação;
+- exercícios de fixação.
+
+Este bloco cria o vocabulário mínimo do aluno. Antes de avançar, ele precisa entender o que entra, o que o programa processa e o que sai.
+
+## Bloco 03.2 - Decisões e lógica booleana
+
+Arquivos:
+
+```text
+17 - aula16.py
+18 - aula17.py
+19 - aula18.py
+20 - aula19.py
+21 - aula20.py
+22 - aula21.py
+23 - aula22.py
+24 - aula23.py
+```
+
+Conteúdos trabalhados:
+
+- condicionais;
+- `if`, `elif` e `else`;
+- indentação;
+- comparadores;
+- operadores lógicos;
+- `and`, `or`, `not`;
+- `in` e `not in`;
+- avaliação de curto-circuito;
+- decisões encadeadas.
+
+Este bloco ensina o programa a escolher caminhos. É aqui que o aluno deixa de escrever scripts lineares e começa a criar regras.
+
+## Bloco 03.3 - Strings, formatação e validação inicial
+
+Arquivos:
+
+```text
+25 - aula24.py
+26 - aula25.py
+27 - aula26.py
+28 - aula27.py
+29 - aula28.py
+30 - aula29.py
+31 - aula30.py
+32 - aula31.py
+33 - aula32.py
+34 - aula33.py
+```
+
+Conteúdos trabalhados:
+
+- interpolação;
+- formatação de strings;
+- fatiamento;
+- tamanho de strings;
+- validação de entrada;
+- exercícios de par ou ímpar;
+- documentação auxiliar;
+- primeiros cuidados com erros.
+
+Este bloco aproxima o aluno de problemas reais: dados digitados vêm sujos, incompletos ou em formato diferente do esperado.
+
+## Bloco 03.4 - Repetições
+
+Arquivos:
+
+```text
+35 - aula34.py
+36 - aula35.py
+37 - aula36.py
+38 - aula37.py
+39 - aula38.py
+40 - aula39.py
+41 - aula40.py
+42 - aula41.py
+43 - aula42.py
+44 - aula43.py
+45 - aula44.py
+46 - aula45.py
+47 - aula46.py
+48 - aula47.py
+```
+
+Conteúdos trabalhados:
+
+- `while`;
+- controle de fluxo;
+- acumuladores;
+- contadores;
+- `break`;
+- `continue`;
+- `while else`;
+- calculadora com validação;
+- contagem de letras;
+- `for`;
+- `range()`;
+- exercícios de repetição.
+
+Este bloco ensina o programa a insistir, percorrer e repetir. É uma virada importante: o aluno começa a resolver tarefas com volume.
+
+## Bloco 03.5 - Coleções
+
+Arquivos:
+
+```text
+49 - aula48.1.py
+50 - aula48.2.py
+51 - aula48.3.py
+52 - aula48.4.py
+53 - aula48.5.py
+54 - aula49.py
+55 - aula50.py
+56 - aula51.py
+57 - aula52.py
+58 - aula53.py
+59 - aula54.py
+```
+
+Conteúdos trabalhados:
+
+- listas;
+- índices;
+- alteração de itens;
+- inserção e remoção;
+- `append()`, `pop()` e `clear()`;
+- tuplas;
+- empacotamento;
+- desempacotamento;
+- `enumerate()`;
+- lista interativa;
+- tratamento de índice inválido.
+
+Este bloco ensina a trabalhar com vários dados ao mesmo tempo. Depois dele, o aluno já consegue construir pequenos sistemas em modo terminal.
+
+## Bloco 03.6 - Dados, strings e estruturas
+
+Arquivos:
+
+```text
+60 - aula55.py
+61 - aula56.py
+62 - aula57.py
+63 - aula58.py
+64 - aula59.py
+```
+
+Conteúdos trabalhados:
+
+- imprecisão de ponto flutuante;
+- `Decimal`;
+- `split()`;
+- `join()`;
+- listas dentro de listas;
+- matrizes;
+- interpretador do Python;
+- Zen of Python;
+- diferença entre métodos e funções.
+
+Este bloco melhora a maturidade do aluno. Ele passa a enxergar que Python não é só escrever comandos, mas entender comportamento, precisão e organização de dados.
+
+## Bloco 03.7 - Projeto CPF
+
+Arquivos:
+
+```text
+65 - aula60.py
+66 - aula61.py
+67 - aula62.1.py
+68 - aula62.2.py
 69 - aula63.py
 ```
 
-Cada arquivo Python pode conter:
+Conteúdos trabalhados:
 
-- anotações iniciais do estudo;
-- exemplos executáveis;
-- material de suporte;
-- explicação didática;
-- exercícios;
-- gabarito ou resolução comentada.
+- cálculo de dígitos verificadores;
+- contadores regressivos;
+- acumuladores;
+- limpeza de entrada;
+- rejeição de sequências repetidas;
+- `re.sub()`;
+- `sys.exit()`;
+- validação completa de CPF.
 
-## Mapa da seção 3
+Este projeto fecha a seção porque combina quase tudo: strings, números, laços, condições, conversão de tipos, validação e organização em etapas.
 
-| Bloco | Arquivos | Tema |
-| --- | --- | --- |
-| Preparação | `01` | Testes curtos e avaliação de expressões |
-| Fundamentos | `02` a `16` | Comentários, `print()`, strings, tipos, variáveis, operadores, entrada e formatação |
-| Decisões | `17` a `24` | Condicionais, comparação, operadores lógicos e fluxo de decisão |
-| Strings e validação | `25` a `34` | Interpolação, fatiamento, entrada, exercícios e tratamento inicial de erros |
-| Repetições | `35` a `47` | `while`, `for`, `range()`, controle de laços e exercícios práticos |
-| Coleções | `48.1` a `54` | Listas, tuplas, índices, `enumerate()` e lista interativa |
-| Dados e estruturas | `55` a `59` | `Decimal`, manipulação de strings, matrizes, interpretador e métodos |
-| Projeto CPF | `60` a `63` | Cálculo de dígitos, geração e validação de CPF |
+## Critérios de conclusão da seção 3
 
-## Critérios para avançar
+O aluno pode avançar quando conseguir:
 
-O aluno está pronto para continuar quando conseguir:
-
-- explicar a ordem de execução de um script simples;
-- separar entrada, processamento e saída;
-- escrever variáveis com nomes claros;
-- converter dados recebidos por `input()`;
-- montar condições com comparadores e operadores lógicos;
-- usar `while` quando a repetição depende de uma condição;
-- usar `for` quando existe uma sequência definida;
-- manipular listas e strings sem depender de tentativa e erro;
-- tratar erros básicos de entrada;
-- construir uma solução pequena em etapas.
+- explicar um código sem executar;
+- escrever scripts pequenos sem copiar;
+- montar condições com clareza;
+- escolher entre `while` e `for`;
+- manipular listas e strings;
+- tratar erros simples de entrada;
+- adaptar o validador de CPF;
+- registrar dúvidas e decisões no Obsidian.
 
 ---
 
-# Estrutura do Repositório
+# Módulo 04 - Funções e Reutilização
 
-Esta é a organização recomendada para manter o curso público, evolutivo e compatível com GitHub Pages.
+Fonte editável:
 
 ```text
-.
-├── README.md
-├── index.html
-├── script.js
-├── style.css
-├── assets/
-├── conteudos/
-│   └── secao_3/
-│       ├── README.md
-│       ├── 01 - arquivo_de_testes_0.py
-│       ├── 02 - aula01.py
-│       └── ...
-├── doc_python/
-│   ├── .obsidian/
-│   ├── 00 - Início.md
-│   ├── 00 - Mapas/
-│   ├── 01 - Seções/
-│   ├── 02 - Blocos/
-│   ├── 03 - Manutenção/
-│   └── 04 - Referências/
-├── docs/
-├── templates/
-└── tools/
+conteudos/secao_4/
 ```
 
-## Função de cada área
+Estado atual: pasta preparada para receber conteúdo.
 
-| Caminho | Função |
-| --- | --- |
-| `README.md` | Conteúdo principal publicado no GitHub Pages |
-| `index.html` | Página que abre o curso no navegador |
-| `script.js` | Lê e renderiza o Markdown do curso |
-| `style.css` | Aparência do site |
-| `assets/` | Imagens, ícones e arquivos visuais |
-| `conteudos/` | Materiais de base separados por seção |
-| `doc_python/` | Cofre Obsidian para anotações estruturadas |
-| `doc_python/.obsidian/` | Configurações internas do Obsidian. Não mexer |
-| `docs/` | Documentação técnica e guias de manutenção |
-| `templates/` | Modelos para novas aulas e seções |
-| `tools/` | Scripts auxiliares de organização |
+## Objetivo planejado
 
-## Como o GitHub Pages usa este projeto
+Transformar scripts lineares em blocos reutilizáveis com funções.
 
-O site público deve continuar simples:
+## Conteúdos previstos
 
-1. O GitHub Pages publica a raiz do repositório.
-2. O navegador abre `index.html`.
-3. O JavaScript carrega este `README.md`.
-4. Os títulos do Markdown viram páginas e seções navegáveis.
+- criação de funções com `def`;
+- parâmetros;
+- argumentos;
+- retorno com `return`;
+- escopo local e global;
+- funções pequenas e legíveis;
+- refatoração de scripts da seção 3;
+- aplicação em projetos simples.
 
-Por isso, o `README.md` precisa ser claro, bem estruturado e estável. Ele é a versão pública do curso.
+## Conexão com a seção anterior
 
-Os arquivos em `conteudos/` funcionam como fonte de estudo e desenvolvimento. Eles não precisam ser lidos diretamente pelo aluno no primeiro acesso.
+A seção 3 ensina o aluno a resolver problemas. Esta seção deve ensinar a organizar essas soluções em partes reutilizáveis.
 
 ---
 
-# Padrão para Novas Seções
+# Módulo 05 - Organização de Código
 
-Toda nova seção deve nascer dentro de `conteudos/`.
-
-Use nomes previsíveis:
+Fonte editável:
 
 ```text
-conteudos/secao_04/
-conteudos/secao_05/
-conteudos/secao_06/
+conteudos/secao_5/
 ```
 
-A pasta atual permanece como `secao_3` para preservar o histórico já existente.
+Estado atual: pasta preparada para receber conteúdo.
 
-## Estrutura mínima de uma seção
+## Objetivo planejado
 
-```text
-conteudos/secao_04/
-├── README.md
-├── 01 - aula01.py
-├── 02 - aula02.py
-└── 03 - aula03.py
-```
+Ensinar como separar responsabilidades e manter arquivos Python mais fáceis de evoluir.
 
-O `README.md` da seção deve conter:
+## Conteúdos previstos
 
-- objetivo da seção;
-- pré-requisitos;
-- ordem sugerida das aulas;
-- lista de arquivos;
-- critérios para avançar;
-- observações de manutenção.
-
-## Padrão de aula
-
-Ao criar um novo arquivo de aula, siga esta estrutura:
-
-```python
-"""
-Título da aula
-
-Resumo curto do que será estudado.
-"""
-
-# ========================================
-# OBJETIVO
-# ========================================
-
-"""
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
-"""
-
-# ========================================
-# EXPLICAÇÃO
-# ========================================
-
-"""
-Explicação didática em linguagem simples.
-"""
-
-# ========================================
-# EXEMPLOS
-# ========================================
-
-print("Exemplo executável")
-
-# ========================================
-# EXERCÍCIOS
-# ========================================
-
-"""
-1. Exercício fácil.
-2. Exercício médio.
-3. Exercício de revisão.
-"""
-```
-
-## Fluxo de atualização
-
-1. Criar ou atualizar os arquivos em `conteudos/secao_XX/`.
-2. Registrar a visão geral no `README.md` da própria seção.
-3. Criar ou atualizar notas no cofre `doc_python/`, sem mexer em `.obsidian`.
-4. Consolidar a versão pública no `README.md` da raiz.
-5. Abrir o site localmente e conferir a navegação.
-6. Publicar no GitHub Pages.
+- módulos;
+- importações;
+- pacotes;
+- arquivos auxiliares;
+- separação entre execução e definição;
+- `if __name__ == "__main__"`;
+- organização de pequenos projetos.
 
 ---
 
-# Cofre Obsidian
+# Módulo 06 - Estruturas de Dados
 
-O cofre fica em:
+Fonte editável:
+
+```text
+conteudos/secao_6/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- dicionários;
+- conjuntos;
+- listas de dicionários;
+- tuplas nomeadas ou estruturas simples;
+- iteração em estruturas aninhadas;
+- busca, filtro e transformação de dados.
+
+---
+
+# Módulo 07 - Arquivos e Persistência
+
+Fonte editável:
+
+```text
+conteudos/secao_7/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- leitura de arquivos;
+- escrita de arquivos;
+- caminhos;
+- `with open()`;
+- arquivos `.txt`;
+- arquivos `.csv`;
+- introdução a JSON.
+
+---
+
+# Módulo 08 - Erros e Validações
+
+Fonte editável:
+
+```text
+conteudos/secao_8/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- exceções específicas;
+- múltiplos `except`;
+- `else` e `finally`;
+- validação de entrada;
+- mensagens de erro úteis;
+- criação de funções de validação.
+
+---
+
+# Módulo 09 - Funções Avançadas
+
+Fonte editável:
+
+```text
+conteudos/secao_9/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- argumentos posicionais;
+- argumentos nomeados;
+- valores padrão;
+- `*args`;
+- `**kwargs`;
+- funções lambda;
+- funções como valores.
+
+---
+
+# Módulo 10 - Programação Orientada a Objetos
+
+Fonte editável:
+
+```text
+conteudos/secao_10/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- classes;
+- objetos;
+- atributos;
+- métodos;
+- `__init__`;
+- encapsulamento básico;
+- herança;
+- composição.
+
+---
+
+# Módulo 11 - Ambiente e Ferramentas
+
+Fonte editável:
+
+```text
+conteudos/secao_11/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- ambiente virtual;
+- instalação de pacotes;
+- `pip`;
+- organização de dependências;
+- terminal;
+- estrutura de projeto.
+
+---
+
+# Módulo 12 - Testes e Qualidade
+
+Fonte editável:
+
+```text
+conteudos/secao_12/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- testes manuais;
+- testes automatizados;
+- `pytest`;
+- casos de teste;
+- refatoração segura;
+- leitura de erros.
+
+---
+
+# Módulo 13 - Automação com Python
+
+Fonte editável:
+
+```text
+conteudos/secao_13/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- automação de tarefas repetitivas;
+- manipulação de arquivos em lote;
+- scripts utilitários;
+- entrada por terminal;
+- relatórios simples.
+
+---
+
+# Módulo 14 - Dados Estruturados
+
+Fonte editável:
+
+```text
+conteudos/secao_14/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- CSV;
+- JSON;
+- transformação de dados;
+- filtros;
+- agrupamentos;
+- limpeza de dados.
+
+---
+
+# Módulo 15 - Projetos Intermediários
+
+Fonte editável:
+
+```text
+conteudos/secao_15/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- projetos de terminal;
+- cadastro;
+- menu interativo;
+- persistência simples;
+- validação;
+- organização por funções.
+
+---
+
+# Módulo 16 - Banco de Dados
+
+Fonte editável:
+
+```text
+conteudos/secao_16/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- conceitos de banco;
+- SQLite;
+- conexão;
+- criação de tabelas;
+- inserção;
+- consulta;
+- atualização;
+- remoção.
+
+---
+
+# Módulo 17 - APIs e Requisições
+
+Fonte editável:
+
+```text
+conteudos/secao_17/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- HTTP;
+- APIs;
+- requisições;
+- respostas JSON;
+- tratamento de erros de rede;
+- integração com serviços externos.
+
+---
+
+# Módulo 18 - Terminal e Produtividade
+
+Fonte editável:
+
+```text
+conteudos/secao_18/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- argumentos de linha de comando;
+- menus;
+- scripts executáveis;
+- produtividade no terminal;
+- organização de utilitários.
+
+---
+
+# Módulo 19 - Aplicações Web ou Interfaces
+
+Fonte editável:
+
+```text
+conteudos/secao_19/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- introdução a aplicações;
+- rotas;
+- entrada e saída;
+- páginas simples;
+- integração com projetos anteriores.
+
+---
+
+# Módulo 20 - Projeto Aplicado
+
+Fonte editável:
+
+```text
+conteudos/secao_20/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- planejamento de projeto;
+- requisitos;
+- divisão em módulos;
+- implementação incremental;
+- testes;
+- documentação.
+
+---
+
+# Módulo 21 - Revisão e Refatoração
+
+Fonte editável:
+
+```text
+conteudos/secao_21/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- revisão de código;
+- refatoração;
+- nomes melhores;
+- redução de duplicação;
+- organização de funções;
+- melhoria incremental.
+
+---
+
+# Módulo 22 - Portfólio e Documentação
+
+Fonte editável:
+
+```text
+conteudos/secao_22/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- README de projeto;
+- descrição de funcionalidades;
+- prints e exemplos;
+- instruções de execução;
+- organização para GitHub.
+
+---
+
+# Módulo 23 - Fechamento e Próximos Passos
+
+Fonte editável:
+
+```text
+conteudos/secao_23/
+```
+
+Estado atual: pasta preparada para receber conteúdo.
+
+## Conteúdos previstos
+
+- revisão geral;
+- mapa do que foi aprendido;
+- lacunas para revisar;
+- próximos estudos;
+- plano de continuidade.
+
+---
+
+# Cérebro Obsidian
+
+O cérebro do curso fica em:
 
 ```text
 doc_python/
 ```
 
-Ele deve ser usado para organizar pensamento, mapas de conteúdo, rascunhos e anotações conectadas.
+Ele não substitui `conteudos/`. Ele documenta, conecta e explica a estrutura.
 
-## O que pode ficar no cofre
+## Função do Obsidian
 
-- mapas de estudo;
-- resumos por seção;
-- links entre conceitos;
-- planejamento de novas aulas;
-- observações de revisão;
-- ideias de exercícios;
-- anotações pessoais de evolução do curso.
+- criar mapas do curso;
+- conectar seções;
+- registrar decisões;
+- apontar para arquivos editáveis;
+- planejar módulos futuros;
+- manter uma visão de longo prazo;
+- servir como memória do projeto.
 
-## O que não deve ser feito no cofre
+## Estrutura do cofre
 
-- Não transformar `.obsidian` em área de conteúdo.
-- Não mover configurações internas para outra pasta.
-- Não depender de plugin específico para o site funcionar.
-- Não publicar notas incompletas como se fossem conteúdo final.
-
-## Separação entre cofre e site
-
-O Obsidian é a oficina.
-
-O GitHub Pages é a vitrine.
-
-As notas podem ser livres, conectadas e exploratórias. O `README.md` da raiz deve ser limpo, sequencial e pronto para o aluno.
-
----
-
-# Manual do README Público
-
-Este arquivo é o conteúdo principal renderizado pelo site.
-
-## Regras de escrita
-
-- Use `#` para criar uma página principal no site.
-- Use `##` e `###` para criar divisões dentro da página.
-- Use blocos de código com três crases.
-- Prefira exemplos pequenos antes de exemplos completos.
-- Explique o conceito antes de mostrar a solução.
-- Termine conteúdos didáticos com exercícios ou critérios de domínio.
-- Mantenha a ordem de aprendizagem progressiva.
-
-## Modelo de módulo público
-
-````md
-# Módulo X - Nome do conteúdo
-
-Introdução curta do tema.
-
-## Objetivo
-
-- Objetivo 1
-- Objetivo 2
-- Objetivo 3
-
-## Explicação
-
-Texto didático em linguagem simples.
-
-## Exemplo
-
-```python
-print("Olá, Python")
+```text
+doc_python/
+├── 00 - Início.md
+├── 00 - Mapas/
+├── 01 - Seções/
+├── 02 - Blocos/
+├── 03 - Manutenção/
+└── 04 - Referências/
 ```
 
-## Exercícios
+## Regra do cofre
 
-1. Exercício inicial.
-2. Exercício intermediário.
-3. Exercício de revisão.
-````
+Nunca altere manualmente:
 
-## Quando atualizar este README
+```text
+doc_python/.obsidian/
+```
 
-Atualize o `README.md` da raiz quando:
-
-- uma seção estiver pronta para publicação;
-- a ordem da trilha mudar;
-- um projeto novo entrar no curso;
-- a estrutura do repositório mudar;
-- uma regra de manutenção precisar ficar visível.
-
-Não use o README público para guardar rascunhos longos. Rascunhos devem ficar em `conteudos/` ou no cofre Obsidian.
+As notas ficam fora dessa pasta.
 
 ---
 
-# Manutenção
+# Área Técnica
 
-## Antes de publicar
+Esta seção existe para manutenção do repositório e para futuras atualizações automáticas ou assistidas.
 
-Confira:
+## Publicação
 
-- O `README.md` abre corretamente no site.
-- Os títulos principais usam apenas um `#`.
-- Os subtítulos usam `##` ou `###`.
-- Os blocos de código estão fechados.
-- Links internos apontam para arquivos existentes.
-- Nenhum arquivo dentro de `doc_python/.obsidian/` foi alterado.
-- Arquivos temporários, ambientes virtuais e logs não entraram no Git.
+O GitHub Pages publica a raiz do repositório. O site abre `index.html`, carrega `script.js` e renderiza este `README.md`.
+
+## Como atualizar uma seção
+
+1. Edite os arquivos em `conteudos/secao_X/`.
+2. Atualize o `README.md` da própria seção.
+3. Atualize ou crie notas em `doc_python/`.
+4. Consolide a versão pública neste `README.md`.
+5. Teste o site localmente.
+6. Faça commit e push.
+
+## Checklist antes de publicar
+
+- O conteúdo público está no `README.md`.
+- A fonte editável está em `conteudos/`.
+- O cérebro está atualizado em `doc_python/`.
+- `.obsidian` não foi alterado.
+- Os links principais continuam funcionando.
+- O site carrega sem erro no navegador.
 
 ## Comandos úteis
+
+Executar servidor local:
+
+```bash
+python -m http.server 8017 --bind 127.0.0.1
+```
+
+Abrir site local:
+
+```text
+http://127.0.0.1:8017/
+```
 
 Listar arquivos da seção 3:
 
@@ -427,32 +911,8 @@ Listar arquivos da seção 3:
 python tools/organizador.py --target conteudos/secao_3
 ```
 
-Executar uma aula específica:
-
-```bash
-python "conteudos/secao_3/02 - aula01.py"
-```
-
-Verificar o status do repositório:
+Verificar alterações:
 
 ```bash
 git status
 ```
-
-## Próxima evolução recomendada
-
-A próxima melhoria natural é criar páginas públicas específicas para cada seção, mantendo este README como índice principal.
-
-Uma estrutura futura possível:
-
-```text
-conteudos/
-├── secao_03/
-│   └── publico.md
-├── secao_04/
-│   └── publico.md
-└── secao_05/
-    └── publico.md
-```
-
-Depois disso, o site pode carregar cada arquivo sob demanda, sem deixar o `README.md` grande demais.

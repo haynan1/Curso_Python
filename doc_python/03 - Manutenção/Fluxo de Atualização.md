@@ -29,4 +29,5 @@ Fluxo recomendado para adicionar, revisar ou publicar conteúdo.
 
 - [[Estrutura do Repositório]]
 - [[Publicação no GitHub Pages]]
+- [[Prompt Fixo Codex]]
 - [[00 - Mapas/Regras do Cofre|Regras do Cofre]]

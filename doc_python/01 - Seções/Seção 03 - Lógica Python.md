@@ -51,4 +51,4 @@ Construir uma base sólida para ler, escrever e organizar scripts simples em Pyt
 
 ## Próxima seção
 
-- [[Seção 04 - Próxima Seção]]
+- [[Seção 04 - Funções e Reutilização]]

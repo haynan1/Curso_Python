@@ -43,4 +43,4 @@ conteudos/secao_3/69 - aula63.py
 
 - Bloco anterior: [[05 - Strings e Dados]]
 - Mapa: [[00 - Mapas/Mapa da Seção 3|Mapa da Seção 3]]
-- Próxima seção: [[01 - Seções/Seção 04 - Próxima Seção|Seção 04 - Próxima Seção]]
+- Próxima seção: [[01 - Seções/Seção 04 - Funções e Reutilização|Seção 04 - Funções e Reutilização]]

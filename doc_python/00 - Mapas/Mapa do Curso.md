@@ -5,6 +5,7 @@ Este mapa organiza o Curso Python como uma trilha de aprendizado e como um proje
 ## Visão geral
 
 - [[00 - Início|Início do Cofre]]
+- [[Mapa dos Conteúdos]]
 - [[Mapa da Seção 3]]
 - [[Fluxo GitHub Pages]]
 - [[Regras do Cofre]]
@@ -12,7 +13,26 @@ Este mapa organiza o Curso Python como uma trilha de aprendizado e como um proje
 ## Estrutura principal
 
 - [[01 - Seções/Seção 03 - Lógica Python|Seção 03 - Lógica Python]]
-- [[01 - Seções/Seção 04 - Próxima Seção|Seção 04 - Próxima Seção]]
+- [[01 - Seções/Seção 04 - Funções e Reutilização|Seção 04 - Funções e Reutilização]]
+- [[01 - Seções/Seção 05 - Organização de Código|Seção 05 - Organização de Código]]
+- [[01 - Seções/Seção 06 - Estruturas de Dados|Seção 06 - Estruturas de Dados]]
+- [[01 - Seções/Seção 07 - Arquivos e Persistência|Seção 07 - Arquivos e Persistência]]
+- [[01 - Seções/Seção 08 - Erros e Validações|Seção 08 - Erros e Validações]]
+- [[01 - Seções/Seção 09 - Funções Avançadas|Seção 09 - Funções Avançadas]]
+- [[01 - Seções/Seção 10 - Programação Orientada a Objetos|Seção 10 - Programação Orientada a Objetos]]
+- [[01 - Seções/Seção 11 - Ambiente e Ferramentas|Seção 11 - Ambiente e Ferramentas]]
+- [[01 - Seções/Seção 12 - Testes e Qualidade|Seção 12 - Testes e Qualidade]]
+- [[01 - Seções/Seção 13 - Automação com Python|Seção 13 - Automação com Python]]
+- [[01 - Seções/Seção 14 - Dados Estruturados|Seção 14 - Dados Estruturados]]
+- [[01 - Seções/Seção 15 - Projetos Intermediários|Seção 15 - Projetos Intermediários]]
+- [[01 - Seções/Seção 16 - Banco de Dados|Seção 16 - Banco de Dados]]
+- [[01 - Seções/Seção 17 - APIs e Requisições|Seção 17 - APIs e Requisições]]
+- [[01 - Seções/Seção 18 - Terminal e Produtividade|Seção 18 - Terminal e Produtividade]]
+- [[01 - Seções/Seção 19 - Aplicações Web ou Interfaces|Seção 19 - Aplicações Web ou Interfaces]]
+- [[01 - Seções/Seção 20 - Projeto Aplicado|Seção 20 - Projeto Aplicado]]
+- [[01 - Seções/Seção 21 - Revisão e Refatoração|Seção 21 - Revisão e Refatoração]]
+- [[01 - Seções/Seção 22 - Portfólio e Documentação|Seção 22 - Portfólio e Documentação]]
+- [[01 - Seções/Seção 23 - Fechamento e Próximos Passos|Seção 23 - Fechamento e Próximos Passos]]
 
 ## Blocos conceituais
 
@@ -28,6 +48,7 @@ Este mapa organiza o Curso Python como uma trilha de aprendizado e como um proje
 - [[03 - Manutenção/Estrutura do Repositório|Estrutura do Repositório]]
 - [[03 - Manutenção/Publicação no GitHub Pages|Publicação no GitHub Pages]]
 - [[03 - Manutenção/Fluxo de Atualização|Fluxo de Atualização]]
+- [[03 - Manutenção/Prompt Fixo Codex|Prompt Fixo Codex]]
 
 ## Referências do repositório
 

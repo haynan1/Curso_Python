@@ -212,12 +212,16 @@ function classifyPage(page) {
     return { group: "Projeto", label: "Padrão", title: "Novas seções" };
   }
 
-  if (/cofre obsidian/i.test(page.title)) {
-    return { group: "Projeto", label: "Cofre", title: "Obsidian" };
+  if (/cofre obsidian|cérebro obsidian/i.test(page.title)) {
+    return { group: "Projeto", label: "Cérebro", title: "Obsidian" };
   }
 
   if (/manual do readme público/i.test(page.title)) {
     return { group: "Projeto", label: "Manual", title: "README público" };
+  }
+
+  if (/área técnica/i.test(page.title)) {
+    return { group: "Projeto", label: "Técnico", title: "Manutenção" };
   }
 
   if (/manutenção/i.test(page.title)) {
