@@ -19,3 +19,6 @@ undo_log.txt
 Thumbs.db
 .idea/
 .vscode/
+
+# Obsidian vault settings
+Curso_Python/.obsidian/
