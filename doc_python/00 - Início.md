@@ -39,6 +39,7 @@ Este cofre é a área de planejamento, estudo, revisão e conexão de ideias do 
 
 ## Blocos de estudo
 
+- [[05 - Aulas/Secao 03/Índice da Seção 03|Índice completo das aulas da Seção 03]]
 - [[02 - Blocos/01 - Fundamentos|Fundamentos]]
 - [[02 - Blocos/02 - Decisões|Decisões]]
 - [[02 - Blocos/03 - Repetições|Repetições]]

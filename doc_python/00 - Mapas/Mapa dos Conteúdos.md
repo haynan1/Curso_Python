@@ -43,3 +43,8 @@ Tudo que é aula, exercício, projeto ou exemplo Python deve ficar dentro de uma
 ```text
 conteudos/ -> doc_python/ -> README.md -> GitHub Pages
 ```
+
+## Conteúdo estruturado existente
+
+- `conteudos/secao_3/aulas_estruturadas/`: versão Markdown estruturada de cada arquivo Python da seção 3.
+- [[05 - Aulas/Secao 03/Índice da Seção 03|Índice completo das aulas da seção 3]].

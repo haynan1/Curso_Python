@@ -5,6 +5,7 @@ Mapa de navegação da seção 3 do curso, baseada nos arquivos em `conteudos/se
 ## Nota principal
 
 - [[01 - Seções/Seção 03 - Lógica Python|Seção 03 - Lógica Python]]
+- [[05 - Aulas/Secao 03/Índice da Seção 03|Índice completo das aulas]]
 
 ## Ordem dos blocos
 

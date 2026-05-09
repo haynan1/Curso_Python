@@ -15,6 +15,8 @@ interprete como:
 - leia este prompt fixo;
 - leia o cofre Obsidian;
 - confira `conteudos/`;
+- leia os arquivos `.py` da seção envolvida;
+- atualize a versão estruturada em Markdown dentro da própria seção;
 - atualize a estrutura de forma coerente;
 - preserve `doc_python/.obsidian/`;
 - atualize README público, READMEs das seções e notas do Obsidian quando necessário;
@@ -38,6 +40,9 @@ Antes de alterar qualquer arquivo, leia e entenda a estrutura do projeto.
    - Cada seção do curso fica em `conteudos/secao_X/`.
    - Os arquivos Python são a fonte prática e podem ser alterados.
    - O `README.md` de cada seção deve explicar objetivo, ordem, arquivos e critérios.
+   - Se a seção tiver arquivos `.py`, leia cada arquivo relevante e mantenha o conteúdo estruturado em Markdown dentro da própria pasta da seção.
+   - Para a seção 3, a camada estruturada fica em `conteudos/secao_3/aulas_estruturadas/`.
+   - Para a seção 3, o índice Obsidian das aulas fica em `doc_python/05 - Aulas/Secao 03/Índice da Seção 03.md`.
 
 4. Se atualizar conteúdo de aula:
    - atualize os arquivos em `conteudos/secao_X/`;

@@ -12,6 +12,7 @@ conteudos/secao_3/
 
 - [[00 - Mapas/Mapa da Seção 3|Mapa da Seção 3]]
 - [[04 - Referências/Pasta Conteúdos|Pasta Conteúdos]]
+- [[05 - Aulas/Secao 03/Índice da Seção 03|Índice completo das aulas]]
 
 ## Objetivo
 
