@@ -7,7 +7,7 @@ Este cofre existe para organizar conhecimento, não para guardar configuração 
 Nunca edite, apague, mova ou renomeie arquivos dentro de:
 
 ```text
-Curso_Python/.obsidian/
+doc_python/.obsidian/
 ```
 
 ## Pode editar

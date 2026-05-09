@@ -17,7 +17,7 @@ O GitHub Pages publica a raiz do repositório. O arquivo `index.html` abre o sit
 - Conferir se os subtítulos usam `##` ou `###`.
 - Conferir se os blocos de código estão fechados.
 - Conferir se links internos fazem sentido.
-- Conferir se `Curso_Python/.obsidian/` não foi alterado.
+- Conferir se `doc_python/.obsidian/` não foi alterado.
 
 ## Relações
 

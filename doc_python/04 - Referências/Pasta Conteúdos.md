@@ -21,7 +21,7 @@ A pasta `conteudos/` guarda os materiais de base do curso, separados por seção
 ## Relação com o cofre
 
 - A pasta `conteudos/` guarda os arquivos reais de aula.
-- O cofre `Curso_Python/` cria mapas, links e planejamento.
+- O cofre `doc_python/` cria mapas, links e planejamento.
 - O `README.md` da raiz publica a versão final para GitHub Pages.
 
 ## Links

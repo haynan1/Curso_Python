@@ -15,7 +15,7 @@ script.js
 style.css
 assets/
 conteudos/
-Curso_Python/
+doc_python/
 docs/
 templates/
 tools/
@@ -30,7 +30,7 @@ tools/
 | `script.js` | Renderização do Markdown |
 | `style.css` | Aparência do site |
 | `conteudos/` | Materiais de apoio e arquivos de aula |
-| `Curso_Python/` | Cofre Obsidian |
+| `doc_python/` | Cofre Obsidian |
 | `docs/` | Documentação interna |
 | `templates/` | Modelos reutilizáveis |
 | `tools/` | Scripts de manutenção |

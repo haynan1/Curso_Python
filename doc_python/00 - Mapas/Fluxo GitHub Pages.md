@@ -31,4 +31,4 @@ O conteúdo final para o aluno deve estar consolidado no `README.md` da raiz ou 
 - Consolidar a versão pública no `README.md`.
 - Testar a navegação no navegador.
 - Verificar `git status`.
-- Confirmar que `Curso_Python/.obsidian/` não foi alterado.
+- Confirmar que `doc_python/.obsidian/` não foi alterado.

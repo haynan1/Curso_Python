@@ -200,6 +200,30 @@ function classifyPage(page) {
     return { group: "Visão geral", label: "Início", title: "Apresentação" };
   }
 
+  if (/guia público/i.test(page.title)) {
+    return { group: "Curso", label: "Guia", title: "Guia público" };
+  }
+
+  if (/estrutura do repositório/i.test(page.title)) {
+    return { group: "Projeto", label: "Estrutura", title: "Repositório" };
+  }
+
+  if (/padrão para novas seções/i.test(page.title)) {
+    return { group: "Projeto", label: "Padrão", title: "Novas seções" };
+  }
+
+  if (/cofre obsidian/i.test(page.title)) {
+    return { group: "Projeto", label: "Cofre", title: "Obsidian" };
+  }
+
+  if (/manual do readme público/i.test(page.title)) {
+    return { group: "Projeto", label: "Manual", title: "README público" };
+  }
+
+  if (/manutenção/i.test(page.title)) {
+    return { group: "Projeto", label: "Manutenção", title: "Publicação" };
+  }
+
   const aulaMatch = page.title.match(/^Aula\s+(\d+)\s*-\s*(.+)$/i);
   if (aulaMatch) {
     return {

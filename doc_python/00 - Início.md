@@ -42,7 +42,7 @@ Este cofre é a área de planejamento, estudo, revisão e conexão de ideias do 
 Nunca altere manualmente a pasta:
 
 ```text
-Curso_Python/.obsidian/
+doc_python/.obsidian/
 ```
 
 Essa pasta pertence ao Obsidian. As notas do curso ficam fora dela.

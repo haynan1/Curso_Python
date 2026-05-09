@@ -13,7 +13,7 @@ O conteúdo atual foi reorganizado com base na pasta `conteudos/secao_3`, que re
 
 - Site público: renderizado pelo `index.html` a partir deste `README.md`.
 - Conteúdo-base da seção atual: `conteudos/secao_3/`.
-- Cofre de anotações: `Curso_Python/`.
+- Cofre de anotações: `doc_python/`.
 - Documentação interna: `docs/`.
 - Modelos reutilizáveis: `templates/`.
 - Ferramentas de organização: `tools/`.
@@ -23,7 +23,7 @@ O conteúdo atual foi reorganizado com base na pasta `conteudos/secao_3`, que re
 Nunca edite, apague, renomeie ou mova arquivos dentro de:
 
 ```text
-Curso_Python/.obsidian/
+doc_python/.obsidian/
 ```
 
 Essa pasta pertence ao Obsidian e guarda configurações internas do cofre, como plugins, aparência, workspace e preferências locais. Alterar esses arquivos pode quebrar o ambiente de anotações.
@@ -31,10 +31,10 @@ Essa pasta pertence ao Obsidian e guarda configurações internas do cofre, como
 Ao trabalhar no cofre, edite apenas arquivos `.md` de conteúdo, como:
 
 ```text
-Curso_Python/00 - Início.md
-Curso_Python/secao-03.md
-Curso_Python/anotacoes/
-Curso_Python/mapas/
+doc_python/00 - Início.md
+doc_python/00 - Mapas/Mapa do Curso.md
+doc_python/01 - Seções/Seção 03 - Lógica Python.md
+doc_python/02 - Blocos/01 - Fundamentos.md
 ```
 
 Se uma alteração exigir mexer em `.obsidian`, ela deve ser feita manualmente pelo dono do cofre, dentro do próprio Obsidian.
@@ -176,9 +176,14 @@ Esta é a organização recomendada para manter o curso público, evolutivo e co
 │       ├── 01 - arquivo_de_testes_0.py
 │       ├── 02 - aula01.py
 │       └── ...
-├── Curso_Python/
+├── doc_python/
 │   ├── .obsidian/
-│   └── 00 - Início.md
+│   ├── 00 - Início.md
+│   ├── 00 - Mapas/
+│   ├── 01 - Seções/
+│   ├── 02 - Blocos/
+│   ├── 03 - Manutenção/
+│   └── 04 - Referências/
 ├── docs/
 ├── templates/
 └── tools/
@@ -194,8 +199,8 @@ Esta é a organização recomendada para manter o curso público, evolutivo e co
 | `style.css` | Aparência do site |
 | `assets/` | Imagens, ícones e arquivos visuais |
 | `conteudos/` | Materiais de base separados por seção |
-| `Curso_Python/` | Cofre Obsidian para anotações estruturadas |
-| `Curso_Python/.obsidian/` | Configurações internas do Obsidian. Não mexer |
+| `doc_python/` | Cofre Obsidian para anotações estruturadas |
+| `doc_python/.obsidian/` | Configurações internas do Obsidian. Não mexer |
 | `docs/` | Documentação técnica e guias de manutenção |
 | `templates/` | Modelos para novas aulas e seções |
 | `tools/` | Scripts auxiliares de organização |
@@ -298,7 +303,7 @@ print("Exemplo executável")
 
 1. Criar ou atualizar os arquivos em `conteudos/secao_XX/`.
 2. Registrar a visão geral no `README.md` da própria seção.
-3. Criar ou atualizar notas no cofre `Curso_Python/`, sem mexer em `.obsidian`.
+3. Criar ou atualizar notas no cofre `doc_python/`, sem mexer em `.obsidian`.
 4. Consolidar a versão pública no `README.md` da raiz.
 5. Abrir o site localmente e conferir a navegação.
 6. Publicar no GitHub Pages.
@@ -310,7 +315,7 @@ print("Exemplo executável")
 O cofre fica em:
 
 ```text
-Curso_Python/
+doc_python/
 ```
 
 Ele deve ser usado para organizar pensamento, mapas de conteúdo, rascunhos e anotações conectadas.
@@ -411,7 +416,7 @@ Confira:
 - Os subtítulos usam `##` ou `###`.
 - Os blocos de código estão fechados.
 - Links internos apontam para arquivos existentes.
-- Nenhum arquivo dentro de `Curso_Python/.obsidian/` foi alterado.
+- Nenhum arquivo dentro de `doc_python/.obsidian/` foi alterado.
 - Arquivos temporários, ambientes virtuais e logs não entraram no Git.
 
 ## Comandos úteis
